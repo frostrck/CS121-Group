@@ -30,7 +30,7 @@ CS121: Schelling Model of Housing Segregation
 import click
 import utility
 
-def dist(location, center):
+def dist(location1, location2):
     '''
     Determine the distance of a location from a center. 
 
@@ -40,29 +40,36 @@ def dist(location, center):
     Returns: distance (int)
     '''
 
-    d = abs(location[0]-center[0]) + abs(location[1]-center[1])
+    d = abs(location1[0]-location2[0]) + abs(location1[1]-location2[1])
 
     return d
 
-def neighbors(grid, R, center):
+def similarity_score(grid, location, R):
     '''
-    Generates a list of neighbors given a center and radius
+    Calculates the similarity score for a neighborhood 
 
     Inputs:
-        center(tuple): the center of our neighborhood
-        radius(int): maximum distance that we still consider a location to be within the neighborhood
-    Ourput: 
-        neighbors(list): list of tuples
+        grid: the grid
+        R (int): neighborhood parameter
+        location (int, int): a grid location
     '''
-    neighbor = [] 
+
+    x,y = location
+    S = 0
+    H = 0
 
     for i in range(len(grid)):
         for j in range(len(grid[i])):
-            if dist((i, j), center) <= R:
-                neighbor.append((i,j))
+            if dist((i, j), location) <= R:
+                if grid[i][j] == grid[x][y]:
+                    S += 1
+                    H += 1
+                elif grid[i][j] != "F":
+                    H += 1
     
-    return neighbor
+    score = S/H
 
+    return score
 
 def is_satisfied(grid, R, location, sim_sat_range):
     '''
@@ -80,13 +87,14 @@ def is_satisfied(grid, R, location, sim_sat_range):
           with his similarity score.
     Returns: bool
     '''
+    x,y = location
+    assert grid[x][y] != "F"
+    lb,ub = sim_sat_range
 
-    # Since it does not make sense to call this function on a home
-    # that is for sale, we recommend adding an assertion to verify
-    # that the home is not for sale.
-
-    # Replace False with the appropriate return value
-    return False
+    if lb <= similarity_score(grid, location, R) <= ub:
+        return True
+    else:
+        return False
 
 
 def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
