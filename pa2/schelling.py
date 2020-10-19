@@ -30,6 +30,40 @@ CS121: Schelling Model of Housing Segregation
 import click
 import utility
 
+def dist(location, center):
+    '''
+    Determine the distance of a location from a center. 
+
+    Inputs (tuples): 
+        location: the location 
+        center: the center 
+    Returns: distance (int)
+    '''
+
+    d = abs(location[0]-center[0]) + abs(location[1]-center[1])
+
+    return d
+
+def neighbors(grid, R, center):
+    '''
+    Generates a list of neighbors given a center and radius
+
+    Inputs:
+        center(tuple): the center of our neighborhood
+        radius(int): maximum distance that we still consider a location to be within the neighborhood
+    Ourput: 
+        neighbors(list): list of tuples
+    '''
+    neighbor = [] 
+
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if dist((i, j), center) <= R:
+                neighbor.append((i,j))
+    
+    return neighbor
+
+
 def is_satisfied(grid, R, location, sim_sat_range):
     '''
     Determine whether or not the homeowner at a specific location is
