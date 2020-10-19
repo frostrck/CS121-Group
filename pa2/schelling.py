@@ -87,6 +87,7 @@ def is_satisfied(grid, R, location, sim_sat_range):
           with his similarity score.
     Returns: bool
     '''
+    
     x,y = location
     assert grid[x][y] != "F"
     lb,ub = sim_sat_range
@@ -96,9 +97,29 @@ def is_satisfied(grid, R, location, sim_sat_range):
     else:
         return False
 
+def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
+    '''
+    Find and relocate homeowner to new home
+
+    '''
+    x,y = location
+    
+    for home in homes_for_sale:
+        a,b = home
+        if patience > 0:
+            if is_satisfied(grid, R, home, sim_sat_range) == True:  #the parameter passed for location is currently incorrect. Need to figure out how to change "F" to "M/B" to find similarity score
+                patience -=1
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+        elif patience == 0:
+            grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+
+    return grid 
+
+
 
 def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
     '''
+
     Do a full simulation.
 
     Inputs:
