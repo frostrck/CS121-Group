@@ -32,11 +32,11 @@ import utility
 
 def dist(location1, location2):
     '''
-    Determine the distance of a location from a center. 
+    Determine the distance of two locations from one another. 
 
     Inputs (tuples): 
-        location: the location 
-        center: the center 
+        location1: first location 
+        location2: second location
     Returns: distance (int)
     '''
 
@@ -58,16 +58,17 @@ def similarity_score(grid, location, R):
     S = 0
     H = 0
 
-    for i in range(len(grid)):
-        for j in range(len(grid[i])):
-            if dist((i, j), location) <= R:
-                if grid[i][j] == grid[x][y]:
-                    S += 1
-                    H += 1
-                elif grid[i][j] != "F":
-                    H += 1
+    for i in range(x-R, x+1+R):
+        for j in range(y-R,y+1+R):
+            if  i >= 0 and i < len(grid) and j >= 0 and j < len(grid):
+                if dist((i, j), location) <= R:
+                    if grid[i][j] == grid[x][y]:
+                        S += 1
+                        H += 1
+                    elif grid[i][j] != "F":
+                        H += 1
     
-    score = S/H
+    score = S/H 
 
     return score
 
@@ -97,6 +98,12 @@ def is_satisfied(grid, R, location, sim_sat_range):
     else:
         return False
 
+def swap_locations(grid, location1, location2):
+    x,y = location1
+    a,b = location2
+
+    grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+
 def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
     '''
     Find and relocate homeowner to new home
@@ -109,7 +116,6 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
         if patience > 0:
             if is_satisfied(grid, R, home, sim_sat_range) == True:  #the parameter passed for location is currently incorrect. Need to figure out how to change "F" to "M/B" to find similarity score
                 patience -=1
-                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
         elif patience == 0:
             grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
 
