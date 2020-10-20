@@ -158,6 +158,11 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
 
 
 def simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, color):
+    '''
+    Simulates one relocation wave for either maroon or blue homeowners
+
+    Returns: updated grid
+    '''
 
     for i in range(len(grid)):
         for j in range(len(grid[i])):
@@ -165,9 +170,21 @@ def simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, color):
                 if is_satisfied(grid, R, (i,j), sim_sat_range) == False:
                     grid = find_new_home(grid, R, (i,j), patience, sim_sat_range, homes_for_sale)
 
-    return grid, homes_for_sale
+    return grid
 
 
+def simulate_step(grid, R, patience, sim_sat_range, homes_for_sale):
+    '''
+    Simulates one step of the simulation, where there's a maroon wave followed by a blue wave
+
+    Returns: updated grid
+    '''
+
+    grid = simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, "M")
+
+    grid = simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, "B")
+
+    return grid
 
 def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
     '''
@@ -185,9 +202,14 @@ def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
 
     Returns: (int) The number of relocations completed.
     '''
+    steps = 0
+    relocations = 0
 
-    # Replace 0 with an appropriate return value
-    return 0
+    while steps <= max_steps:
+        grid = simulate_step(grid, R, patience, sim_sat_range, homes_for_sale)
+        steps +=1
+
+    return num_relocations
 
 
 @click.command(name="schelling")
