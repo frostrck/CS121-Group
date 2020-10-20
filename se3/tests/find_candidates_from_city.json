@@ -1,0 +1,131 @@
+[
+    {
+        "cand_filename": "tests/small_candidates.csv",
+        "location": [
+            "BIRMINGHAM",
+            "AL"
+        ],
+        "expected": [
+            "C00464040",
+            "C00460410",
+            "C00461038",
+            "C00471235",
+            "C00482091"
+        ]
+    },
+    {
+        "cand_filename": "tests/small_candidates.csv",
+        "location": [
+            "OXFORD",
+            "MS"
+        ],
+        "expected": [
+            "C00091892"
+        ]
+    },
+    {
+        "cand_filename": "tests/small_candidates.csv",
+        "location": [
+            "NEWARK",
+            "NJ"
+        ],
+        "expected": []
+    },
+    {
+        "cands": [
+            {
+                "Candidate_ID": "C00466698",
+                "City": "ANCHORAGE",
+                "District": "00",
+                "First": " HARRY T JR",
+                "Last": "CRAWFORD",
+                "Party": "DEM",
+                "State": "AK",
+                "Zipcode": "99504"
+            }
+        ],
+        "location": [
+            "BIRMINGHAM",
+            "AL"
+        ],
+        "expected": []
+    },
+    {
+        "cands": [
+            {
+                "Candidate_ID": "C00466698",
+                "City": "ANCHORAGE",
+                "District": "00",
+                "First": " HARRY T JR",
+                "Last": "CRAWFORD",
+                "Party": "DEM",
+                "State": "AK",
+                "Zipcode": "99504"
+            }
+        ],
+        "location": [
+            "OXFORD",
+            "MS"
+        ],
+        "expected": []
+    },
+    {
+        "cands": [
+            {
+                "Candidate_ID": "C00466698",
+                "City": "ANCHORAGE",
+                "District": "00",
+                "First": " HARRY T JR",
+                "Last": "CRAWFORD",
+                "Party": "DEM",
+                "State": "AK",
+                "Zipcode": "99504"
+            }
+        ],
+        "location": [
+            "NEWARK",
+            "NJ"
+        ],
+        "expected": []
+    },
+    {
+        "cands": [],
+        "location": [
+            "BIRMINGHAM",
+            "AL"
+        ],
+        "expected": []
+    },
+    {
+        "cand_filename": "tests/candidates.csv",
+        "location": [
+            "BIRMINGHAM",
+            "AL"
+        ],
+        "expected": [
+            "C00464040",
+            "C00460410",
+            "C00461038",
+            "C00471235",
+            "C00482091"
+        ]
+    },
+    {
+        "cand_filename": "tests/candidates.csv",
+        "location": [
+            "OXFORD",
+            "MS"
+        ],
+        "expected": [
+            "C00091892"
+        ]
+    },
+    {
+        "cand_filename": "tests/candidates.csv",
+        "location": [
+            "NEWARK",
+            "NJ"
+        ],
+        "expected": []
+    }
+]

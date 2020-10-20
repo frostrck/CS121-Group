@@ -1,0 +1,36 @@
+[
+    {
+        "dc_filename": "tests/donor_count.json",
+        "threshold": 50,
+        "expected": [
+            "C00020974",
+            "C00028316",
+            "C00088484",
+            "C00091892"
+        ]
+    },
+    {
+        "dc_filename": "tests/donor_count.json",
+        "threshold": 0,
+        "expected": []
+    },
+    {
+        "dc_filename": "tests/donor_count.json",
+        "threshold": 200,
+        "expected": [
+            "C00020974",
+            "C00028316",
+            "C00078105",
+            "C00083428",
+            "C00088484",
+            "C00090357",
+            "C00091892",
+            "C00107003"
+        ]
+    },
+    {
+        "dc": {},
+        "threshold": 10,
+        "expected": []
+    }
+]

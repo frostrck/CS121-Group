@@ -8,18 +8,8 @@ import os
 import sys
 import pytest
 
-### TODO: Talk to Borja about:
-###   - the absolute vs. relative path issue
-###
-###   - how to set timeouts for the tests
-###
-###   - whether is there a way split the tests into three groups
-###     without using three separate files and three separate
-###     functions?
-
-# BASE_DIR = os.path.dirname(__file__)
-# TEST_DIR = BASE_DIR
-TEST_DIR = "tests"
+BASE_DIR = os.path.dirname(__file__)
+TEST_DIR = os.path.join(BASE_DIR, "tests")
 
 timeout = 60
 
@@ -78,6 +68,7 @@ def helper_test_do_simulation(params):
     else:
         init_for_sale = [tuple(t) for t in params["initial_for_sale"]]
 
+    orig_for_sale = init_for_sale[:]
     expected_num_homeowners = count_homeowners(actual_grid)
     expected_num_relocations = params["expected_num_relocations"]
 
@@ -89,16 +80,15 @@ def helper_test_do_simulation(params):
     expected_filename = params["expected_filename"]
     expected_grid = utility.read_grid(expected_filename)
 
-    full_path = os.path.join(TEST_DIR, input_filename)
     recreate_msg = "To recreate this test in ipython3 run:\n"
     recreate_msg += "  grid = utility.read_grid('{}')\n"
     recreate_msg += "  schelling.do_simulation(grid, {}, {}, {}, {}, {})"
-    recreate_msg = recreate_msg.format(full_path,
+    recreate_msg = recreate_msg.format(input_filename,
                                        R,
                                        sim_sat_range,
                                        patience,
                                        max_num_steps,
-                                       init_for_sale)
+                                       orig_for_sale)
 
     if actual_num_relocations != expected_num_relocations:
         s = ("actual and expected number of relocations do not match\n"

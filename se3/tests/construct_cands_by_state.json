@@ -1,0 +1,5388 @@
+[
+    {
+        "cand_filename": "tests/small_candidates.csv",
+        "expected": {
+            "AL": [
+                {
+                    "Candidate_ID": "C00464040",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " MARTHA RENEE",
+                    "Last": "BOZEMAN",
+                    "Party": "UNK",
+                    "State": "AL",
+                    "Zipcode": "35201"
+                },
+                {
+                    "Candidate_ID": "C00460410",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " EARL FREDERICK JR",
+                    "Last": "HILLIARD",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35202"
+                },
+                {
+                    "Candidate_ID": "C00461038",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " SHEILA",
+                    "Last": "SMOOT",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35201"
+                },
+                {
+                    "Candidate_ID": "C00471235",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " MICHELE",
+                    "Last": "WALLER",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35202"
+                },
+                {
+                    "Candidate_ID": "C00482091",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " ROBERT CHRISTOPHER",
+                    "Last": "SALTER",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35206"
+                }
+            ],
+            "VT": [
+                {
+                    "Candidate_ID": "C00068353",
+                    "City": "MONTPELIER",
+                    "District": "00",
+                    "First": " PATRICK",
+                    "Last": "LEAHY",
+                    "Party": "DEM",
+                    "State": "VT",
+                    "Zipcode": "05601"
+                }
+            ],
+            "UT": [
+                {
+                    "Candidate_ID": "C00104752",
+                    "City": "SALT LAKE CITY",
+                    "District": "00",
+                    "First": " ORRIN G",
+                    "Last": "HATCH",
+                    "Party": "REP",
+                    "State": "UT",
+                    "Zipcode": "84101"
+                }
+            ],
+            "MS": [
+                {
+                    "Candidate_ID": "C00091892",
+                    "City": "OXFORD",
+                    "District": "00",
+                    "First": " THAD",
+                    "Last": "COCHRAN",
+                    "Party": "REP",
+                    "State": "MS",
+                    "Zipcode": "38655"
+                }
+            ]
+        }
+    },
+    {
+        "cands": [
+            {
+                "Candidate_ID": "C00466698",
+                "City": "ANCHORAGE",
+                "District": "00",
+                "First": " HARRY T JR",
+                "Last": "CRAWFORD",
+                "Party": "DEM",
+                "State": "AK",
+                "Zipcode": "99504"
+            }
+        ],
+        "expected": {
+            "AK": [
+                {
+                    "Candidate_ID": "C00466698",
+                    "City": "ANCHORAGE",
+                    "District": "00",
+                    "First": " HARRY T JR",
+                    "Last": "CRAWFORD",
+                    "Party": "DEM",
+                    "State": "AK",
+                    "Zipcode": "99504"
+                }
+            ]
+        }
+    },
+    {
+        "cands": [],
+        "expected": {}
+    },
+    {
+        "cand_filename": "tests/candidates.csv",
+        "expected": {
+            "AK": [
+                {
+                    "Candidate_ID": "C00466698",
+                    "City": "ANCHORAGE",
+                    "District": "00",
+                    "First": " HARRY T JR",
+                    "Last": "CRAWFORD",
+                    "Party": "DEM",
+                    "State": "AK",
+                    "Zipcode": "99504"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ANCHOR POINT",
+                    "District": "00",
+                    "First": " JOHN R.",
+                    "Last": "COX",
+                    "Party": "REP",
+                    "State": "AK",
+                    "Zipcode": "99556"
+                },
+                {
+                    "Candidate_ID": "C00474783",
+                    "City": "ANCHORAGE",
+                    "District": "01",
+                    "First": " SHELDON ALLRED",
+                    "Last": "FISHER",
+                    "Party": "REP",
+                    "State": "AK",
+                    "Zipcode": "99517"
+                },
+                {
+                    "Candidate_ID": "C00012229",
+                    "City": "ANCHORAGE",
+                    "District": "00",
+                    "First": " DONALD E",
+                    "Last": "YOUNG",
+                    "Party": "REP",
+                    "State": "AK",
+                    "Zipcode": "99503"
+                },
+                {
+                    "Candidate_ID": "C00028316",
+                    "City": "ANCHORAGE",
+                    "District": "00",
+                    "First": " THEODORE F (TED)",
+                    "Last": "STEVENS",
+                    "Party": "REP",
+                    "State": "AK",
+                    "Zipcode": "99510"
+                }
+            ],
+            "AL": [
+                {
+                    "Candidate_ID": "C00464040",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " MARTHA RENEE",
+                    "Last": "BOZEMAN",
+                    "Party": "UNK",
+                    "State": "AL",
+                    "Zipcode": "35201"
+                },
+                {
+                    "Candidate_ID": "C00459495",
+                    "City": "ORANGE BEACH",
+                    "District": "01",
+                    "First": " PETER HUNTER",
+                    "Last": "GOUNARES",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "36561"
+                },
+                {
+                    "Candidate_ID": "C00485938",
+                    "City": "FOLEY",
+                    "District": "01",
+                    "First": " DAVID MARSH",
+                    "Last": "WALTER",
+                    "Party": "CON",
+                    "State": "AL",
+                    "Zipcode": "36535"
+                },
+                {
+                    "Candidate_ID": "C00462143",
+                    "City": "Montgomery",
+                    "District": "02",
+                    "First": " MARTHA",
+                    "Last": "ROBY",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "36106"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MILLBROOK",
+                    "District": "02",
+                    "First": " ROBERT E JR",
+                    "Last": "JOHN",
+                    "Party": "IND",
+                    "State": "AL",
+                    "Zipcode": "36054"
+                },
+                {
+                    "Candidate_ID": "C00471938",
+                    "City": "MONTGOMERY",
+                    "District": "02",
+                    "First": " RICK JOE",
+                    "Last": "BARBER",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "36117"
+                },
+                {
+                    "Candidate_ID": "C00477638",
+                    "City": "MONTGOMERY",
+                    "District": "02",
+                    "First": " STEPHANIE WOLFE",
+                    "Last": "BELL",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "36106"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MONTGOMERY",
+                    "District": "02",
+                    "First": " JOHN",
+                    "Last": "MCKINNEY",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "36111"
+                },
+                {
+                    "Candidate_ID": "C00481275",
+                    "City": "MONTGOMERY",
+                    "District": "03",
+                    "First": " STEPHEN GRAHAM",
+                    "Last": "SEGREST",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "36106"
+                },
+                {
+                    "Candidate_ID": "C00239038",
+                    "City": "HUNTSVILLE",
+                    "District": "05",
+                    "First": " ROBERT E \"BUD\" JR",
+                    "Last": "CRAMER",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35804"
+                },
+                {
+                    "Candidate_ID": "C00462481",
+                    "City": "MADISON",
+                    "District": "05",
+                    "First": " LESTER S",
+                    "Last": "PHILLIP",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35758"
+                },
+                {
+                    "Candidate_ID": "C00464149",
+                    "City": "HUNTSVILLE",
+                    "District": "05",
+                    "First": " MO",
+                    "Last": "BROOKS",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35802"
+                },
+                {
+                    "Candidate_ID": "C00476135",
+                    "City": "HUNTSVILLE",
+                    "District": "05",
+                    "First": " MITCHELL JOHN",
+                    "Last": "HOWIE",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35801"
+                },
+                {
+                    "Candidate_ID": "C00477026",
+                    "City": "HUNTSVILLE",
+                    "District": "05",
+                    "First": " TAZEWELL",
+                    "Last": "SHEPARD",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35801"
+                },
+                {
+                    "Candidate_ID": "C00478297",
+                    "City": "TOREY",
+                    "District": "05",
+                    "First": " STEPHEN WALKER",
+                    "Last": "RABY",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35773"
+                },
+                {
+                    "Candidate_ID": "C00464222",
+                    "City": "KIMBERLY",
+                    "District": "06",
+                    "First": " STANLEY KYLE",
+                    "Last": "COOKE",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35091"
+                },
+                {
+                    "Candidate_ID": "C00471466",
+                    "City": "MAYLENE",
+                    "District": "06",
+                    "First": " PAUL ANTHONY",
+                    "Last": "LAMBERT",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35114"
+                },
+                {
+                    "Candidate_ID": "C00347872",
+                    "City": "Birmingham",
+                    "District": "07",
+                    "First": " ARTUR  G",
+                    "Last": "DAVIS",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35201"
+                },
+                {
+                    "Candidate_ID": "C00458976",
+                    "City": "Birmingham",
+                    "District": "07",
+                    "First": " TERRI A.",
+                    "Last": "SEWELL",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35201"
+                },
+                {
+                    "Candidate_ID": "C00460410",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " EARL FREDERICK JR",
+                    "Last": "HILLIARD",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35202"
+                },
+                {
+                    "Candidate_ID": "C00461038",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " SHEILA",
+                    "Last": "SMOOT",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35201"
+                },
+                {
+                    "Candidate_ID": "C00463158",
+                    "City": "SELMA",
+                    "District": "07",
+                    "First": " JAMES JR",
+                    "Last": "PERKINS",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "36703"
+                },
+                {
+                    "Candidate_ID": "C00469338",
+                    "City": "TUSCALOOSA",
+                    "District": "07",
+                    "First": " PATRICIA EVANS",
+                    "Last": "MOKOLO",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "35405"
+                },
+                {
+                    "Candidate_ID": "C00467357",
+                    "City": "LINDEN",
+                    "District": "07",
+                    "First": " FRANK",
+                    "Last": "LANKSTER",
+                    "Party": "DEM",
+                    "State": "AL",
+                    "Zipcode": "36748"
+                },
+                {
+                    "Candidate_ID": "C00471235",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " MICHELE",
+                    "Last": "WALLER",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35202"
+                },
+                {
+                    "Candidate_ID": "C00481374",
+                    "City": "TUSCALOOSA",
+                    "District": "07",
+                    "First": " CAROL FLORRIE",
+                    "Last": "HENDRICKSON",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35404"
+                },
+                {
+                    "Candidate_ID": "C00482059",
+                    "City": "SELMA",
+                    "District": "07",
+                    "First": " DONALD NORWOOD",
+                    "Last": "CHAMBERLAIN",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "36701"
+                },
+                {
+                    "Candidate_ID": "C00482091",
+                    "City": "BIRMINGHAM",
+                    "District": "07",
+                    "First": " ROBERT CHRISTOPHER",
+                    "Last": "SALTER",
+                    "Party": "REP",
+                    "State": "AL",
+                    "Zipcode": "35206"
+                }
+            ],
+            "AR": [
+                {
+                    "Candidate_ID": "C00462374",
+                    "City": "JONESBORO",
+                    "District": "01",
+                    "First": " ERIC ALAN RICK",
+                    "Last": "CRAWFORD",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72404"
+                },
+                {
+                    "Candidate_ID": "C00472126",
+                    "City": "BLYTHEVILLE",
+                    "District": "01",
+                    "First": " JAMES CHRISTOPHER",
+                    "Last": "GREGORY",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72315"
+                },
+                {
+                    "Candidate_ID": "C00475384",
+                    "City": "JONESBORO",
+                    "District": "01",
+                    "First": " CHAD",
+                    "Last": "CAUSEY",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72401"
+                },
+                {
+                    "Candidate_ID": "C00476432",
+                    "City": "PARAGOULD",
+                    "District": "01",
+                    "First": " TYMOTHE (TIM) LYNN",
+                    "Last": "WOOLDRIDGE",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72450"
+                },
+                {
+                    "Candidate_ID": "C00480905",
+                    "City": "WYNNE",
+                    "District": "01",
+                    "First": " PRINCELLA D",
+                    "Last": "SMITH",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72396"
+                },
+                {
+                    "Candidate_ID": "C00477554",
+                    "City": "WILLIFORD",
+                    "District": "01",
+                    "First": " DAVID RAY",
+                    "Last": "COOK",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72482"
+                },
+                {
+                    "Candidate_ID": "C00477570",
+                    "City": "Blytheville",
+                    "District": "01",
+                    "First": " STEVE MARK",
+                    "Last": "BRYLES",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72316"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "PARAGOULD",
+                    "District": "01",
+                    "First": " MICKEY VERNON",
+                    "Last": "HIGGINS",
+                    "Party": "UNK",
+                    "State": "AR",
+                    "Zipcode": "72450"
+                },
+                {
+                    "Candidate_ID": "C00481515",
+                    "City": "MOUNTAIN HOME",
+                    "District": "01",
+                    "First": " TERRY GLENN",
+                    "Last": "GREEN",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72653"
+                },
+                {
+                    "Candidate_ID": "C00478487",
+                    "City": "MOUNTAIN HOME",
+                    "District": "01",
+                    "First": " BEN",
+                    "Last": "PONDER",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72654"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "BATESVILLE",
+                    "District": "01",
+                    "First": " KEN",
+                    "Last": "ADLER",
+                    "Party": "GRE",
+                    "State": "AR",
+                    "Zipcode": "72503"
+                },
+                {
+                    "Candidate_ID": "C00463752",
+                    "City": "CONWAY",
+                    "District": "02",
+                    "First": " DAVID MARK EMERSON",
+                    "Last": "MEEKS",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72034"
+                },
+                {
+                    "Candidate_ID": "C00468116",
+                    "City": "Little Rock",
+                    "District": "02",
+                    "First": " JOHN TIMOTHY",
+                    "Last": "GRIFFIN",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72217"
+                },
+                {
+                    "Candidate_ID": "C00468934",
+                    "City": "LITTLE ROCK",
+                    "District": "02",
+                    "First": " SCOTT",
+                    "Last": "WALLACE",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72223"
+                },
+                {
+                    "Candidate_ID": "C00474700",
+                    "City": "CONWAY",
+                    "District": "02",
+                    "First": " ROBERT DALE JR",
+                    "Last": "WILLS",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72034"
+                },
+                {
+                    "Candidate_ID": "C00475764",
+                    "City": "LITTLE ROCK",
+                    "District": "02",
+                    "First": " JOYCE ANN",
+                    "Last": "ELLIOTT",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72204"
+                },
+                {
+                    "Candidate_ID": "C00477380",
+                    "City": "LITTLE ROCK",
+                    "District": "02",
+                    "First": " JOHN",
+                    "Last": "ADAMS",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72201"
+                },
+                {
+                    "Candidate_ID": "C00477315",
+                    "City": "LITTLE ROCK",
+                    "District": "02",
+                    "First": " DAVID ALAN",
+                    "Last": "BOLING",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72225"
+                },
+                {
+                    "Candidate_ID": "C00478628",
+                    "City": "LITTLE ROCK",
+                    "District": "02",
+                    "First": " PATRICK JOHNSON DORN",
+                    "Last": "KENNEDY",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72202"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LITTLE ROCK",
+                    "District": "02",
+                    "First": " LANCE",
+                    "Last": "LEVI",
+                    "Party": "IND",
+                    "State": "AR",
+                    "Zipcode": "72225"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "CONWAY",
+                    "District": "02",
+                    "First": " LEWIS",
+                    "Last": "KENNEDY",
+                    "Party": "GRE",
+                    "State": "AR",
+                    "Zipcode": "72034"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ELKINS",
+                    "District": "03",
+                    "First": " BERNARD KURT 'BERNIE'",
+                    "Last": "SKOCH",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72727"
+                },
+                {
+                    "Candidate_ID": "C00468033",
+                    "City": "FAYETTEVILLE",
+                    "District": "03",
+                    "First": " DAVID JEFFREY",
+                    "Last": "WHITAKER",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "72702"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "GRAVETTE",
+                    "District": "03",
+                    "First": " KURT E",
+                    "Last": "MADDOX",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72736"
+                },
+                {
+                    "Candidate_ID": "C00477745",
+                    "City": "ROGERS",
+                    "District": "03",
+                    "First": " STEVE",
+                    "Last": "WOMACK",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72756"
+                },
+                {
+                    "Candidate_ID": "C00478172",
+                    "City": "ROGERS",
+                    "District": "03",
+                    "First": " CECILE H",
+                    "Last": "BLEDSOE",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72756"
+                },
+                {
+                    "Candidate_ID": "C00477901",
+                    "City": "HARRISON",
+                    "District": "03",
+                    "First": " MIKE C",
+                    "Last": "MOORE",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72601"
+                },
+                {
+                    "Candidate_ID": "C00478727",
+                    "City": "SPRINGDALE",
+                    "District": "03",
+                    "First": " DOUG",
+                    "Last": "MATAYO",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "72762"
+                },
+                {
+                    "Candidate_ID": "C00345710",
+                    "City": "Prescott",
+                    "District": "04",
+                    "First": " MICHAEL AVERY",
+                    "Last": "ROSS",
+                    "Party": "DEM",
+                    "State": "AR",
+                    "Zipcode": "71857"
+                },
+                {
+                    "Candidate_ID": "C00478222",
+                    "City": "HOT SPRINGS",
+                    "District": "04",
+                    "First": " GLENN EDWARD",
+                    "Last": "GALLAS",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "71913"
+                },
+                {
+                    "Candidate_ID": "C00478636",
+                    "City": "MAGNOLIA",
+                    "District": "04",
+                    "First": " BETH ANNE",
+                    "Last": "RANKIN",
+                    "Party": "REP",
+                    "State": "AR",
+                    "Zipcode": "71753"
+                }
+            ],
+            "AP": [
+                {
+                    "Candidate_ID": "C00480095",
+                    "City": "Fayetteville",
+                    "District": "03",
+                    "First": " STEVE MR.",
+                    "Last": "LOWRY",
+                    "Party": "REP",
+                    "State": "AP",
+                    "Zipcode": "72703"
+                }
+            ],
+            "DC": [
+                {
+                    "Candidate_ID": "C00231092",
+                    "City": "Washington",
+                    "District": "00",
+                    "First": " ENI",
+                    "Last": "FALEOMAVAEGA",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20026"
+                },
+                {
+                    "Candidate_ID": "C00242768",
+                    "City": "WASHINGTON",
+                    "District": "04",
+                    "First": " JOHN",
+                    "Last": "DOOLITTLE",
+                    "Party": "REP",
+                    "State": "DC",
+                    "Zipcode": "20515"
+                },
+                {
+                    "Candidate_ID": "C00244335",
+                    "City": "Washington",
+                    "District": "00",
+                    "First": " ELEANOR HOLMES",
+                    "Last": "NORTON",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20003"
+                },
+                {
+                    "Candidate_ID": "C00477216",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " DOUGLASS",
+                    "Last": "SLOAN",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20011"
+                },
+                {
+                    "Candidate_ID": "C00484477",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " JOAN F M",
+                    "Last": "MALONE",
+                    "Party": "REP",
+                    "State": "DC",
+                    "Zipcode": "20002"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " DONNA JEAN",
+                    "Last": "ALSTON",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20019"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " ALLEN",
+                    "Last": "WALLACE",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20002"
+                },
+                {
+                    "Candidate_ID": "C00490391",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " MARJORIE (MISSY) REILLY",
+                    "Last": "SMITH",
+                    "Party": "REP",
+                    "State": "DC",
+                    "Zipcode": "20016"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " RICK",
+                    "Last": "TINGLING-CLEMMONS",
+                    "Party": "GRE",
+                    "State": "DC",
+                    "Zipcode": "20019"
+                },
+                {
+                    "Candidate_ID": "C00486746",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " MICHAEL AGUSTUS (MATTHEW) DR ESQ",
+                    "Last": "LEE",
+                    "Party": "IND",
+                    "State": "DC",
+                    "Zipcode": "20013"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " QUEEN",
+                    "Last": "NOBLE",
+                    "Party": "OTH",
+                    "State": "DC",
+                    "Zipcode": "20032"
+                },
+                {
+                    "Candidate_ID": "C00026757",
+                    "City": "Washington",
+                    "District": "07",
+                    "First": " GEORGE",
+                    "Last": "MILLER",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20515"
+                },
+                {
+                    "Candidate_ID": "C00002600",
+                    "City": "Washington",
+                    "District": "15",
+                    "First": " JOHN D. MR.",
+                    "Last": "DINGELL",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20005"
+                },
+                {
+                    "Candidate_ID": "C00088484",
+                    "City": "WASHINGTON",
+                    "District": "00",
+                    "First": " CARL",
+                    "Last": "LEVIN",
+                    "Party": "DEM",
+                    "State": "DC",
+                    "Zipcode": "20002"
+                }
+            ],
+            "AZ": [
+                {
+                    "Candidate_ID": "C00347260",
+                    "City": "Mesa",
+                    "District": "06",
+                    "First": " JEFF MR.",
+                    "Last": "FLAKE",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85205"
+                },
+                {
+                    "Candidate_ID": "C00461806",
+                    "City": "FLAGSTAFF",
+                    "District": "01",
+                    "First": " PAUL ANTHONY ANTHONY",
+                    "Last": "GOSAR",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "86004"
+                },
+                {
+                    "Candidate_ID": "C00463885",
+                    "City": "GLOBE",
+                    "District": "01",
+                    "First": " BRADLEY DON",
+                    "Last": "BEAUCHAMP",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85502"
+                },
+                {
+                    "Candidate_ID": "C00467506",
+                    "City": "SUPERIOR",
+                    "District": "01",
+                    "First": " RUSSELL WESLEY",
+                    "Last": "BOWERS",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85173"
+                },
+                {
+                    "Candidate_ID": "C00474940",
+                    "City": "SHOW LOW",
+                    "District": "01",
+                    "First": " STEVE",
+                    "Last": "MEHTA",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85901"
+                },
+                {
+                    "Candidate_ID": "C00475855",
+                    "City": "COTTONWOOD",
+                    "District": "01",
+                    "First": " JOE",
+                    "Last": "JARACZEWSKI",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "86326"
+                },
+                {
+                    "Candidate_ID": "C00475871",
+                    "City": "SEDONA",
+                    "District": "01",
+                    "First": " THOMAS J",
+                    "Last": "ZALESKI",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "86336"
+                },
+                {
+                    "Candidate_ID": "C00476424",
+                    "City": "PRESCOTT VALLEY",
+                    "District": "01",
+                    "First": " JON RICHARD",
+                    "Last": "JENSEN",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "86314"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "PAULDEN",
+                    "District": "01",
+                    "First": " ANDREW (ANDY)",
+                    "Last": "TOBIN",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "86334"
+                },
+                {
+                    "Candidate_ID": "C00481267",
+                    "City": "GILBERT",
+                    "District": "01",
+                    "First": " FORREST DAYL",
+                    "Last": "GRESSLEY",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85296"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "CHANDLER",
+                    "District": "01",
+                    "First": " NICOLE",
+                    "Last": "PATTI",
+                    "Party": "LIB",
+                    "State": "AZ",
+                    "Zipcode": "85248"
+                },
+                {
+                    "Candidate_ID": "C00474528",
+                    "City": "KINGMAN",
+                    "District": "02",
+                    "First": " CHARLES ROLAND",
+                    "Last": "BLACK",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "86401"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "GLENDALE",
+                    "District": "02",
+                    "First": " STEVEN CRAIG",
+                    "Last": "SCHALLENBERGER",
+                    "Party": "DEM",
+                    "State": "AZ",
+                    "Zipcode": "85304"
+                },
+                {
+                    "Candidate_ID": "C00468686",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " JON",
+                    "Last": "HULBURD",
+                    "Party": "DEM",
+                    "State": "AZ",
+                    "Zipcode": "85018"
+                },
+                {
+                    "Candidate_ID": "C00474197",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " JAMES F",
+                    "Last": "WARING",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85032"
+                },
+                {
+                    "Candidate_ID": "C00474916",
+                    "City": "PARADISE VALLEY",
+                    "District": "03",
+                    "First": " VERNON",
+                    "Last": "PARKER",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85253"
+                },
+                {
+                    "Candidate_ID": "C00474056",
+                    "City": "ANTHEM",
+                    "District": "03",
+                    "First": " PAMELA DIANE",
+                    "Last": "GORMAN",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85086"
+                },
+                {
+                    "Candidate_ID": "C00475442",
+                    "City": "ANTHEM",
+                    "District": "03",
+                    "First": " SAMUEL TURRENTINE SR",
+                    "Last": "CRUMP",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85086"
+                },
+                {
+                    "Candidate_ID": "C00475806",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " PAULINA VASQUEZ",
+                    "Last": "MORRIS",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85001"
+                },
+                {
+                    "Candidate_ID": "C00475863",
+                    "City": "PARADISE VALLEY",
+                    "District": "03",
+                    "First": " BEN",
+                    "Last": "QUAYLE",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85253"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " LEANN",
+                    "Last": "HULL",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85086"
+                },
+                {
+                    "Candidate_ID": "C00478156",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " ROBERT ALLEN",
+                    "Last": "BRANCH",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85053"
+                },
+                {
+                    "Candidate_ID": "C00478453",
+                    "City": "PARADISE VALLEY",
+                    "District": "03",
+                    "First": " STEVEN CARL",
+                    "Last": "MOAK",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85253"
+                },
+                {
+                    "Candidate_ID": "C00478735",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " BRIAN ALAN",
+                    "Last": "SCOTT",
+                    "Party": "IND",
+                    "State": "AZ",
+                    "Zipcode": "85053"
+                },
+                {
+                    "Candidate_ID": "C00480053",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " SCOTT",
+                    "Last": "BAKER",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85022"
+                },
+                {
+                    "Candidate_ID": "C00480426",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " ROBERT LINCOLN",
+                    "Last": "CHARLES",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85068"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " LEONARD",
+                    "Last": "CLARK",
+                    "Party": "GRE",
+                    "State": "AZ",
+                    "Zipcode": "85027"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "PHOENIX",
+                    "District": "03",
+                    "First": " CLAY",
+                    "Last": "ADAIR",
+                    "Party": "LIB",
+                    "State": "AZ",
+                    "Zipcode": "85053"
+                },
+                {
+                    "Candidate_ID": "C00472068",
+                    "City": "PHOENIX",
+                    "District": "04",
+                    "First": " BRIAN",
+                    "Last": "HILL",
+                    "Party": "IND",
+                    "State": "AZ",
+                    "Zipcode": "85005"
+                },
+                {
+                    "Candidate_ID": "C00474007",
+                    "City": "PHOENIX",
+                    "District": "04",
+                    "First": " JANET L",
+                    "Last": "CONTRERAS",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85041"
+                },
+                {
+                    "Candidate_ID": "C00485995",
+                    "City": "SCOTTSDALE",
+                    "District": "04",
+                    "First": " JOE",
+                    "Last": "PENALOSA",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85260"
+                },
+                {
+                    "Candidate_ID": "C00462432",
+                    "City": "SCOTTSDALE",
+                    "District": "05",
+                    "First": " JIM",
+                    "Last": "WARD",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85255"
+                },
+                {
+                    "Candidate_ID": "C00468694",
+                    "City": "SCOTTSDALE",
+                    "District": "05",
+                    "First": " ERIC",
+                    "Last": "WNUCK",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85260"
+                },
+                {
+                    "Candidate_ID": "C00471730",
+                    "City": "GILBERT",
+                    "District": "06",
+                    "First": " JEFFREY W",
+                    "Last": "SMITH",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85234"
+                },
+                {
+                    "Candidate_ID": "C00471912",
+                    "City": "SCOTTSDALE",
+                    "District": "05",
+                    "First": " CHRIS",
+                    "Last": "SALVINO",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85255"
+                },
+                {
+                    "Candidate_ID": "C00474866",
+                    "City": "PHOENIX",
+                    "District": "05",
+                    "First": " MARK VINCENT",
+                    "Last": "SPINKS",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85045"
+                },
+                {
+                    "Candidate_ID": "C00481028",
+                    "City": "TEMPE",
+                    "District": "05",
+                    "First": " JONATHON RYAN",
+                    "Last": "HILL",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85281"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "TEMPE",
+                    "District": "05",
+                    "First": " NICK",
+                    "Last": "COONS",
+                    "Party": "LIB",
+                    "State": "AZ",
+                    "Zipcode": "85285"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SCOTTSDALE",
+                    "District": "05",
+                    "First": " RYAN",
+                    "Last": "BLACKMAN",
+                    "Party": "GRE",
+                    "State": "AZ",
+                    "Zipcode": "85257"
+                },
+                {
+                    "Candidate_ID": "C00472746",
+                    "City": "GILBERT",
+                    "District": "06",
+                    "First": " EASTON CLINT",
+                    "Last": "KELSEY",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85297"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "GILBERT",
+                    "District": "06",
+                    "First": " DARELL",
+                    "Last": "TAPP",
+                    "Party": "LIB",
+                    "State": "AZ",
+                    "Zipcode": "85296"
+                },
+                {
+                    "Candidate_ID": "C00462309",
+                    "City": "TUCSON",
+                    "District": "07",
+                    "First": " RUTH CRAWFORD",
+                    "Last": "MCCLUNG",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85745"
+                },
+                {
+                    "Candidate_ID": "C00481069",
+                    "City": "TUCSON",
+                    "District": "07",
+                    "First": " TERRY LON",
+                    "Last": "MYERS",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85745"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "TOLLESON",
+                    "District": "07",
+                    "First": " CHRISTOPHER JOHN",
+                    "Last": "FLOWERS",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85353"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "TUCSON",
+                    "District": "07",
+                    "First": " JOSEPH DUDLEY",
+                    "Last": "SWEENEY",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85705"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MARICOPA",
+                    "District": "07",
+                    "First": " ROBERT",
+                    "Last": "WILSON",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85138"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "RIO RICO",
+                    "District": "07",
+                    "First": " ANDREW",
+                    "Last": "IBARRA",
+                    "Party": "LIB",
+                    "State": "AZ",
+                    "Zipcode": "85648"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "TUCSON",
+                    "District": "07",
+                    "First": " GEORGE",
+                    "Last": "KEANE",
+                    "Party": "LIB",
+                    "State": "AZ",
+                    "Zipcode": "85757"
+                },
+                {
+                    "Candidate_ID": "C00460808",
+                    "City": "TUCSON",
+                    "District": "08",
+                    "First": " JESSE",
+                    "Last": "KELLY",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85743"
+                },
+                {
+                    "Candidate_ID": "C00461780",
+                    "City": "SIERRA VISTA",
+                    "District": "08",
+                    "First": " VINCENT ANDREW",
+                    "Last": "GOSS",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85635"
+                },
+                {
+                    "Candidate_ID": "C00462721",
+                    "City": "TUCSON",
+                    "District": "08",
+                    "First": " BRIAN ALLAN",
+                    "Last": "MILLER",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85708"
+                },
+                {
+                    "Candidate_ID": "C00470732",
+                    "City": "TUCSON",
+                    "District": "08",
+                    "First": " THOMAS A JR",
+                    "Last": "CARLSON",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85742"
+                },
+                {
+                    "Candidate_ID": "C00474270",
+                    "City": "TUCSON",
+                    "District": "08",
+                    "First": " JONATHAN",
+                    "Last": "PATON",
+                    "Party": "REP",
+                    "State": "AZ",
+                    "Zipcode": "85704"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "TUCSON",
+                    "District": "08",
+                    "First": " STEVEN",
+                    "Last": "STOLTZ",
+                    "Party": "LIB",
+                    "State": "AZ",
+                    "Zipcode": "85739"
+                }
+            ],
+            "CA": [
+                {
+                    "Candidate_ID": "C00480913",
+                    "City": "SAN DIEGO",
+                    "District": "53",
+                    "First": " MARI HAMLIN",
+                    "Last": "FINK",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92106"
+                },
+                {
+                    "Candidate_ID": "C00476937",
+                    "City": "LONG BEACH",
+                    "District": "46",
+                    "First": " JAYENDRA ARVINDLAL DR",
+                    "Last": "SHAH",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90803"
+                },
+                {
+                    "Candidate_ID": "C00479188",
+                    "City": "LOS ANGELES",
+                    "District": "29",
+                    "First": " ANTHONY",
+                    "Last": "PORTANTINO",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90071"
+                },
+                {
+                    "Candidate_ID": "C00479287",
+                    "City": "VACAVILLE",
+                    "District": "07",
+                    "First": " EUGENE",
+                    "Last": "RAY",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "     "
+                },
+                {
+                    "Candidate_ID": "C00480624",
+                    "City": "RANCHO MIRAGE",
+                    "District": "00",
+                    "First": " STANLEY S",
+                    "Last": "COTTON",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "92270"
+                },
+                {
+                    "Candidate_ID": "C00481440",
+                    "City": "TRAVIS AFB",
+                    "District": "01",
+                    "First": " LOREN L",
+                    "Last": "HANKS",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94536"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "NAPA",
+                    "District": "01",
+                    "First": " RANDY",
+                    "Last": "FRANCK",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94558"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "NAPA",
+                    "District": "01",
+                    "First": " MIKE",
+                    "Last": "RODRIGUES",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "94558"
+                },
+                {
+                    "Candidate_ID": "C00468454",
+                    "City": "COTTONWOOD",
+                    "District": "02",
+                    "First": " PETER VINCENT",
+                    "Last": "STIGLICH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "96022"
+                },
+                {
+                    "Candidate_ID": "C00473165",
+                    "City": "FALL RIVER MILLS",
+                    "District": "02",
+                    "First": " JAMES E",
+                    "Last": "REED",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "96028"
+                },
+                {
+                    "Candidate_ID": "C00461061",
+                    "City": "Elk Grove",
+                    "District": "03",
+                    "First": " AMERISH",
+                    "Last": "BERA",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95758"
+                },
+                {
+                    "Candidate_ID": "C00462101",
+                    "City": "SACRAMENTO",
+                    "District": "03",
+                    "First": " GARY",
+                    "Last": "DAVIS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95811"
+                },
+                {
+                    "Candidate_ID": "C00462812",
+                    "City": "SACRAMENTO",
+                    "District": "03",
+                    "First": " BILL",
+                    "Last": "SLATON",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95814"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ELVERTA",
+                    "District": "03",
+                    "First": " JERRY L",
+                    "Last": "LEIDECKER",
+                    "Party": "AIP",
+                    "State": "CA",
+                    "Zipcode": "95626"
+                },
+                {
+                    "Candidate_ID": "C00483008",
+                    "City": "CARMICHAEL",
+                    "District": "03",
+                    "First": " STEVE DONALD",
+                    "Last": "FAVIS",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "95608"
+                },
+                {
+                    "Candidate_ID": "C00475566",
+                    "City": "RANCHO CORDOVA",
+                    "District": "04",
+                    "First": " CLINT",
+                    "Last": "CURTIS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95670"
+                },
+                {
+                    "Candidate_ID": "C00478461",
+                    "City": "AUBURN",
+                    "District": "04",
+                    "First": " MICHAEL",
+                    "Last": "BABICH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95603"
+                },
+                {
+                    "Candidate_ID": "C00490581",
+                    "City": "NEVADA CITY",
+                    "District": "04",
+                    "First": " BENJAMIN A",
+                    "Last": "EMERY",
+                    "Party": "GRE",
+                    "State": "CA",
+                    "Zipcode": "95959"
+                },
+                {
+                    "Candidate_ID": "C00478651",
+                    "City": "SACRAMENTO",
+                    "District": "05",
+                    "First": " ERIK",
+                    "Last": "SMITT",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95835"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SACRAMENTO",
+                    "District": "05",
+                    "First": " GERALD ALLEN",
+                    "Last": "FRINK",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "95814"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAUSACITO",
+                    "District": "06",
+                    "First": " PETER CHRISTIAN",
+                    "Last": "ROMANOWSKY",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94965"
+                },
+                {
+                    "Candidate_ID": "C00474957",
+                    "City": "Clio",
+                    "District": "06",
+                    "First": " JAMES O JR.",
+                    "Last": "JUDD",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "96106"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN RAFAEL",
+                    "District": "06",
+                    "First": " JOEL",
+                    "Last": "SMOLLEN",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "94901"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "OAKLAND",
+                    "District": "06",
+                    "First": " EUGENE E",
+                    "Last": "RUYLE",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "94609"
+                },
+                {
+                    "Candidate_ID": "C00483792",
+                    "City": "TIBURON",
+                    "District": "06",
+                    "First": " DANIEL W",
+                    "Last": "ROBERTS",
+                    "Party": "AIP",
+                    "State": "CA",
+                    "Zipcode": "94920"
+                },
+                {
+                    "Candidate_ID": "C00479741",
+                    "City": "VACAVILLE",
+                    "District": "07",
+                    "First": " RICHARD STEPHEN II",
+                    "Last": "TUBBS",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95687"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LAFAYETTE",
+                    "District": "07",
+                    "First": " JOHN",
+                    "Last": "FITZGERALD",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94549"
+                },
+                {
+                    "Candidate_ID": "C00465914",
+                    "City": "SAN FRANCISCO",
+                    "District": "08",
+                    "First": " JOHN",
+                    "Last": "DENNIS",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94123"
+                },
+                {
+                    "Candidate_ID": "C00471680",
+                    "City": "SAN FRANCISCO",
+                    "District": "08",
+                    "First": " SUMMER J",
+                    "Last": "SHIELDS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94188"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN FRANCISCO",
+                    "District": "08",
+                    "First": " GLORIA E",
+                    "Last": "LA RIVA",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "94110"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "BERKELEY",
+                    "District": "09",
+                    "First": " GERALD",
+                    "Last": "HASHIMOTO",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94701"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "BERKELEY",
+                    "District": "09",
+                    "First": " DAVE",
+                    "Last": "HELLER",
+                    "Party": "GRE",
+                    "State": "CA",
+                    "Zipcode": "94702"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "OAKLAND",
+                    "District": "09",
+                    "First": " LARRY",
+                    "Last": "ALLEN",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "94610"
+                },
+                {
+                    "Candidate_ID": "C00460162",
+                    "City": "Concord",
+                    "District": "10",
+                    "First": " MARK",
+                    "Last": "DESAULNIER",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94524"
+                },
+                {
+                    "Candidate_ID": "C00460527",
+                    "City": "Dublin",
+                    "District": "10",
+                    "First": " ADRIEL",
+                    "Last": "HAMPTON",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94568"
+                },
+                {
+                    "Candidate_ID": "C00461103",
+                    "City": "Sacramento",
+                    "District": "10",
+                    "First": " JOAN",
+                    "Last": "BUCHANAN",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95814"
+                },
+                {
+                    "Candidate_ID": "C00461087",
+                    "City": "FAIRFIELD",
+                    "District": "10",
+                    "First": " ANTHONY MR",
+                    "Last": "WOODS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94533"
+                },
+                {
+                    "Candidate_ID": "C00461392",
+                    "City": "FAIRFIELD",
+                    "District": "10",
+                    "First": " GINO W",
+                    "Last": "VANGUNDY",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "94533"
+                },
+                {
+                    "Candidate_ID": "C00461657",
+                    "City": "San Ramon",
+                    "District": "11",
+                    "First": " DAVID",
+                    "Last": "HARMER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94582"
+                },
+                {
+                    "Candidate_ID": "C00461947",
+                    "City": "DANVILLE",
+                    "District": "10",
+                    "First": " TIFFANY",
+                    "Last": "ATTWOOD",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94526"
+                },
+                {
+                    "Candidate_ID": "C00462697",
+                    "City": "Long Beach",
+                    "District": "10",
+                    "First": " JOHN",
+                    "Last": "GARAMENDI",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90807"
+                },
+                {
+                    "Candidate_ID": "C00463513",
+                    "City": "FAIRFIELD",
+                    "District": "10",
+                    "First": " CHRISTOPHER N",
+                    "Last": "BUNCH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94533"
+                },
+                {
+                    "Candidate_ID": "C00463224",
+                    "City": "PLEASANT HILL",
+                    "District": "10",
+                    "First": " JEREMY",
+                    "Last": "CLOWARD",
+                    "Party": "GRE",
+                    "State": "CA",
+                    "Zipcode": "94523"
+                },
+                {
+                    "Candidate_ID": "C00463257",
+                    "City": "WALNUT CREEK",
+                    "District": "10",
+                    "First": " DAVID",
+                    "Last": "PETERSON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94598"
+                },
+                {
+                    "Candidate_ID": "C00483131",
+                    "City": "DIXON",
+                    "District": "10",
+                    "First": " GARY WILLIAM",
+                    "Last": "CLIFT",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95620"
+                },
+                {
+                    "Candidate_ID": "C00465005",
+                    "City": "LIVERMORE",
+                    "District": "10",
+                    "First": " MARK ALAN",
+                    "Last": "LOOS",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94550"
+                },
+                {
+                    "Candidate_ID": "C00464636",
+                    "City": "CONCORD",
+                    "District": "10",
+                    "First": " JOHN RICHARD",
+                    "Last": "TOTH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94520"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WALNUT CREEK",
+                    "District": "10",
+                    "First": " JEROME 'JERRY'",
+                    "Last": "DENHAM",
+                    "Party": "AIP",
+                    "State": "CA",
+                    "Zipcode": "94597"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "EL CERRITO",
+                    "District": "10",
+                    "First": " MARY",
+                    "Last": "MCILROY",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "94530"
+                },
+                {
+                    "Candidate_ID": "C00479717",
+                    "City": "WALNUT CREEK",
+                    "District": "10",
+                    "First": " BUDDY",
+                    "Last": "BURKE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94597"
+                },
+                {
+                    "Candidate_ID": "C00112250",
+                    "City": "San Carlos",
+                    "District": "12",
+                    "First": " TOM",
+                    "Last": "LANTOS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94070"
+                },
+                {
+                    "Candidate_ID": "C00460733",
+                    "City": "Danville",
+                    "District": "11",
+                    "First": " JONATHAN MR.",
+                    "Last": "DEL ARROZ",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94526"
+                },
+                {
+                    "Candidate_ID": "C00463059",
+                    "City": "ACAMPO",
+                    "District": "11",
+                    "First": " BRAD",
+                    "Last": "GOEHRING",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95220"
+                },
+                {
+                    "Candidate_ID": "C00465575",
+                    "City": "ELK GROVE",
+                    "District": "11",
+                    "First": " LARRY",
+                    "Last": "PEGRAM",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95624"
+                },
+                {
+                    "Candidate_ID": "C00465732",
+                    "City": "LODI",
+                    "District": "11",
+                    "First": " ROBERT",
+                    "Last": "BEADLES",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95240"
+                },
+                {
+                    "Candidate_ID": "C00466029",
+                    "City": "RCHO STA MARGARITA",
+                    "District": "11",
+                    "First": " ANTONIO C",
+                    "Last": "AMADOR",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92688"
+                },
+                {
+                    "Candidate_ID": "C00466979",
+                    "City": "MANTECA",
+                    "District": "11",
+                    "First": " JEFFREY DAVID",
+                    "Last": "TAKADA",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95337"
+                },
+                {
+                    "Candidate_ID": "C00468595",
+                    "City": "DANVILLE",
+                    "District": "11",
+                    "First": " ELIZABETH",
+                    "Last": "EMKEN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94526"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "TRACY",
+                    "District": "11",
+                    "First": " DAVID",
+                    "Last": "CHRISTENSEN",
+                    "Party": "AIP",
+                    "State": "CA",
+                    "Zipcode": "95376"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN CARLOS",
+                    "District": "12",
+                    "First": " MARK PAUL",
+                    "Last": "WILLIAMS",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "94070"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "BELMONT",
+                    "District": "12",
+                    "First": " MICHAEL DOUGLAS",
+                    "Last": "PARKER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94002"
+                },
+                {
+                    "Candidate_ID": "C00490425",
+                    "City": "FOSTER CITY",
+                    "District": "12",
+                    "First": " JOSEPH MICHAEL",
+                    "Last": "HARDING",
+                    "Party": "NNE",
+                    "State": "CA",
+                    "Zipcode": "94404"
+                },
+                {
+                    "Candidate_ID": "C00477562",
+                    "City": "FREMONT",
+                    "District": "13",
+                    "First": " LUIS 'COACH'",
+                    "Last": "GARCIA",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94538"
+                },
+                {
+                    "Candidate_ID": "C00481564",
+                    "City": "SAN LEANDRO",
+                    "District": "13",
+                    "First": " JUSTIN",
+                    "Last": "JELINCIC",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94577"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN JOSE",
+                    "District": "13",
+                    "First": " FOREST",
+                    "Last": "BAKER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95117"
+                },
+                {
+                    "Candidate_ID": "C00485961",
+                    "City": "PLEASANTON",
+                    "District": "13",
+                    "First": " CHRISTOPHER JAMES",
+                    "Last": "PAREJA",
+                    "Party": "NNE",
+                    "State": "CA",
+                    "Zipcode": "94588"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "PALO ALTO",
+                    "District": "14",
+                    "First": " DAVE",
+                    "Last": "CHAPMAN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94302"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "BEN LOMOND",
+                    "District": "14",
+                    "First": " PAUL",
+                    "Last": "LAZAGA",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "95005"
+                },
+                {
+                    "Candidate_ID": "C00351379",
+                    "City": "San Jose",
+                    "District": "15",
+                    "First": " MIKE",
+                    "Last": "HONDA",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95155"
+                },
+                {
+                    "Candidate_ID": "C00458117",
+                    "City": "San Jose",
+                    "District": "15",
+                    "First": " S. JOSEPH",
+                    "Last": "SIMITIAN",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95124"
+                },
+                {
+                    "Candidate_ID": "C00471763",
+                    "City": "SAN JOSE",
+                    "District": "15",
+                    "First": " DON",
+                    "Last": "BARICH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95129"
+                },
+                {
+                    "Candidate_ID": "C00474874",
+                    "City": "SANTA CLARA",
+                    "District": "15",
+                    "First": " KEVIN PATRICK",
+                    "Last": "GORDON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95054"
+                },
+                {
+                    "Candidate_ID": "C00476770",
+                    "City": "SAN JOSE",
+                    "District": "15",
+                    "First": " SCOTT SPENCER",
+                    "Last": "KIRKLAND",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95128"
+                },
+                {
+                    "Candidate_ID": "C00473843",
+                    "City": "SAN JOSE",
+                    "District": "16",
+                    "First": " ROBERT PAUL",
+                    "Last": "HOWELL",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95120"
+                },
+                {
+                    "Candidate_ID": "C00473983",
+                    "City": "SAN JOSE",
+                    "District": "16",
+                    "First": " EDWARD M",
+                    "Last": "GONZALEZ",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "95125"
+                },
+                {
+                    "Candidate_ID": "C00484139",
+                    "City": "SAN JOSE",
+                    "District": "16",
+                    "First": " DANIEL",
+                    "Last": "SAHAGUN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95131"
+                },
+                {
+                    "Candidate_ID": "C00479485",
+                    "City": "CAPITOLA",
+                    "District": "17",
+                    "First": " GARY RICHARD",
+                    "Last": "ARNOLD",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95010"
+                },
+                {
+                    "Candidate_ID": "C00480723",
+                    "City": "SEASIDE",
+                    "District": "17",
+                    "First": " MARY VIRGINIA",
+                    "Last": "LARKIN",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "93955"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SALINAS",
+                    "District": "17",
+                    "First": " PETE",
+                    "Last": "ANDRESEN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93902"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SALINAS",
+                    "District": "17",
+                    "First": " ERIC",
+                    "Last": "PETERSEN",
+                    "Party": "GRE",
+                    "State": "CA",
+                    "Zipcode": "93902"
+                },
+                {
+                    "Candidate_ID": "C00481077",
+                    "City": "CAPITOLA",
+                    "District": "17",
+                    "First": " WILLIAM THARON",
+                    "Last": "CHANDLER",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "95010"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "KING CITY",
+                    "District": "17",
+                    "First": " MICHAEL ROBERT",
+                    "Last": "LE BARRE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93930"
+                },
+                {
+                    "Candidate_ID": "C00466508",
+                    "City": "CERES",
+                    "District": "18",
+                    "First": " MICHAEL CLARE SR",
+                    "Last": "BERRYHILL",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95307"
+                },
+                {
+                    "Candidate_ID": "C00459917",
+                    "City": "MARIPOSA",
+                    "District": "19",
+                    "First": " LES",
+                    "Last": "MARSDEN",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "95338"
+                },
+                {
+                    "Candidate_ID": "C00464701",
+                    "City": "MADERA",
+                    "District": "19",
+                    "First": " LORAINE",
+                    "Last": "GOODWIN",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "93637"
+                },
+                {
+                    "Candidate_ID": "C00472852",
+                    "City": "FRESNO",
+                    "District": "19",
+                    "First": " NORWOOD JAMES JR",
+                    "Last": "PATTERSON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93711"
+                },
+                {
+                    "Candidate_ID": "C00473272",
+                    "City": "TURLOCK",
+                    "District": "19",
+                    "First": " JEFF",
+                    "Last": "DENHAM",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "95381"
+                },
+                {
+                    "Candidate_ID": "C00474262",
+                    "City": "FRESNO",
+                    "District": "19",
+                    "First": " LARRY",
+                    "Last": "WESTERLUND",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93710"
+                },
+                {
+                    "Candidate_ID": "C00482083",
+                    "City": "FRESNO",
+                    "District": "19",
+                    "First": " JOHN ANTHONY",
+                    "Last": "ESTRADA",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "93710"
+                },
+                {
+                    "Candidate_ID": "C00459727",
+                    "City": "HANFORD",
+                    "District": "20",
+                    "First": " JOSHUA THOMAS COULSTON",
+                    "Last": "MILLER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93277"
+                },
+                {
+                    "Candidate_ID": "C00469312",
+                    "City": "VISALIA",
+                    "District": "20",
+                    "First": " JAMES ANDREW",
+                    "Last": "VIDAK",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93230"
+                },
+                {
+                    "Candidate_ID": "C00474437",
+                    "City": "FRESNO",
+                    "District": "20",
+                    "First": " SERAFIN",
+                    "Last": "QUINTANAR",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93727"
+                },
+                {
+                    "Candidate_ID": "C00473595",
+                    "City": "FRESNO",
+                    "District": "20",
+                    "First": " RICHARD DAVID GEORGE",
+                    "Last": "LAKE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93720"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "VISALIA",
+                    "District": "21",
+                    "First": " RUBEN",
+                    "Last": "MACARENO",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "93290"
+                },
+                {
+                    "Candidate_ID": "C00447011",
+                    "City": "WESTLAKE VILLAGE",
+                    "District": "24",
+                    "First": " TIMOTHY CHARLES",
+                    "Last": "KALEMKARIAN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91359"
+                },
+                {
+                    "Candidate_ID": "C00471102",
+                    "City": "SANTA MARIA",
+                    "District": "23",
+                    "First": " DAVID R",
+                    "Last": "STOCKDALE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93455"
+                },
+                {
+                    "Candidate_ID": "C00473124",
+                    "City": "THOUSAND OAKS",
+                    "District": "23",
+                    "First": " JOHN",
+                    "Last": "DAVIDSON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91360"
+                },
+                {
+                    "Candidate_ID": "C00478164",
+                    "City": "SUMMERLAND",
+                    "District": "23",
+                    "First": " THOMAS C",
+                    "Last": "WATSON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93067"
+                },
+                {
+                    "Candidate_ID": "C00477869",
+                    "City": "SANTA MARIA",
+                    "District": "23",
+                    "First": " CLARK",
+                    "Last": "VANDEVENTER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93455"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "PISMO BEACH",
+                    "District": "23",
+                    "First": " CAROLE LEE",
+                    "Last": "MILLER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "93449"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ARROYO GRANDE",
+                    "District": "23",
+                    "First": " DARRELL M",
+                    "Last": "STAFFORD",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "93420"
+                },
+                {
+                    "Candidate_ID": "C00486902",
+                    "City": "SANTA BARBARA",
+                    "District": "23",
+                    "First": " JOHN VICTOR",
+                    "Last": "HAGER",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "93101"
+                },
+                {
+                    "Candidate_ID": "C00459446",
+                    "City": "BURBANK",
+                    "District": "24",
+                    "First": " SHAWN",
+                    "Last": "STERN",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91502"
+                },
+                {
+                    "Candidate_ID": "C00464347",
+                    "City": "SANTA BARBARA",
+                    "District": "24",
+                    "First": " TIMOTHY JAMES",
+                    "Last": "ALLISON",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "93140"
+                },
+                {
+                    "Candidate_ID": "C00466136",
+                    "City": "Thousand Oaks",
+                    "District": "24",
+                    "First": " MARIE",
+                    "Last": "PANEC",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91359"
+                },
+                {
+                    "Candidate_ID": "C00485359",
+                    "City": "VENTURA",
+                    "District": "24",
+                    "First": " LANCE",
+                    "Last": "AGUIAR",
+                    "Party": "UNK",
+                    "State": "CA",
+                    "Zipcode": "93003"
+                },
+                {
+                    "Candidate_ID": "C00479956",
+                    "City": "GLENDORA",
+                    "District": "26",
+                    "First": " DAVID LAWRENCE",
+                    "Last": "MILLER",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "91741"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "RANCHO CUCAMONGA",
+                    "District": "26",
+                    "First": " MARK",
+                    "Last": "BUTLER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91701"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ARCADIA",
+                    "District": "26",
+                    "First": " RANDALL",
+                    "Last": "WEISSBUCH",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "91006"
+                },
+                {
+                    "Candidate_ID": "C00485318",
+                    "City": "GLENDORA",
+                    "District": "26",
+                    "First": " ROBERT",
+                    "Last": "BROWN",
+                    "Party": "NNE",
+                    "State": "CA",
+                    "Zipcode": "91740"
+                },
+                {
+                    "Candidate_ID": "C00343871",
+                    "City": "Los Angeles",
+                    "District": "29",
+                    "First": " ADAM",
+                    "Last": "SCHIFF",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90017"
+                },
+                {
+                    "Candidate_ID": "C00462317",
+                    "City": "SHADOW HILLS",
+                    "District": "27",
+                    "First": " MARK STEVEN SR",
+                    "Last": "REED",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91040"
+                },
+                {
+                    "Candidate_ID": "C00477307",
+                    "City": "HERMOSA BEACH",
+                    "District": "27",
+                    "First": " BRUCE HARRY",
+                    "Last": "DARIAN",
+                    "Party": "FED",
+                    "State": "CA",
+                    "Zipcode": "90254"
+                },
+                {
+                    "Candidate_ID": "C00469361",
+                    "City": "BURBANK",
+                    "District": "28",
+                    "First": " ERIK MERLIN",
+                    "Last": "FROYD",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91510"
+                },
+                {
+                    "Candidate_ID": "C00474221",
+                    "City": "WEST HOLLYWOOD",
+                    "District": "28",
+                    "First": " JENNY",
+                    "Last": "WORMAN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90069"
+                },
+                {
+                    "Candidate_ID": "C00481895",
+                    "City": "GRANADA HILLS",
+                    "District": "28",
+                    "First": " RICHARD A",
+                    "Last": "VALDEZ",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91344"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN FERNANDO",
+                    "District": "28",
+                    "First": " CARLOS A",
+                    "Last": "RODRIQUEZ",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "91340"
+                },
+                {
+                    "Candidate_ID": "C00470989",
+                    "City": "BURBANK",
+                    "District": "29",
+                    "First": " MORTON R",
+                    "Last": "LARGE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91504"
+                },
+                {
+                    "Candidate_ID": "C00473850",
+                    "City": "LOS ANGELES",
+                    "District": "29",
+                    "First": " JOHN",
+                    "Last": "COLBERT",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90017"
+                },
+                {
+                    "Candidate_ID": "C00480079",
+                    "City": "GLENDALE",
+                    "District": "29",
+                    "First": " WILLIAM  (BILL) P",
+                    "Last": "CUSHING",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "     "
+                },
+                {
+                    "Candidate_ID": "C00464164",
+                    "City": "MALIBU",
+                    "District": "30",
+                    "First": " ARI",
+                    "Last": "DAVID",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90265"
+                },
+                {
+                    "Candidate_ID": "C00469734",
+                    "City": "LOS ANGELES",
+                    "District": "30",
+                    "First": " ROBERT A MR",
+                    "Last": "FLUTIE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90017"
+                },
+                {
+                    "Candidate_ID": "C00471128",
+                    "City": "WOODLAND HILLS",
+                    "District": "30",
+                    "First": " DAVID",
+                    "Last": "BENNING",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91367"
+                },
+                {
+                    "Candidate_ID": "C00478040",
+                    "City": "WEST HILLS",
+                    "District": "30",
+                    "First": " CHRIS",
+                    "Last": "KOLSKI",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91304"
+                },
+                {
+                    "Candidate_ID": "C00478578",
+                    "City": "EL SEGUNDO",
+                    "District": "30",
+                    "First": " CHARLES EDWARD",
+                    "Last": "WILKERSON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90245"
+                },
+                {
+                    "Candidate_ID": "C00484717",
+                    "City": "GRANADA HILLS",
+                    "District": "30",
+                    "First": " ERICH D",
+                    "Last": "MILLER",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "91344"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LOS ANGELES",
+                    "District": "30",
+                    "First": " RICHARD R",
+                    "Last": "CASTALDO",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "90004"
+                },
+                {
+                    "Candidate_ID": "C00346296",
+                    "City": "El Monte",
+                    "District": "32",
+                    "First": " HILDA",
+                    "Last": "SOLIS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91731"
+                },
+                {
+                    "Candidate_ID": "C00478859",
+                    "City": "LOS ANGELES",
+                    "District": "31",
+                    "First": " STEPHEN CARLTON",
+                    "Last": "SMITH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90041"
+                },
+                {
+                    "Candidate_ID": "C00365049",
+                    "City": "LOS ANGELES",
+                    "District": "32",
+                    "First": " NOEL IRWIN",
+                    "Last": "HENTSCHEL",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90077"
+                },
+                {
+                    "Candidate_ID": "C00458125",
+                    "City": "Los Angeles",
+                    "District": "32",
+                    "First": " JUDY",
+                    "Last": "CHU",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90017"
+                },
+                {
+                    "Candidate_ID": "C00458174",
+                    "City": "LOS ANGELES",
+                    "District": "32",
+                    "First": " GLORIA",
+                    "Last": "ROMERO",
+                    "Party": "   ",
+                    "State": "CA",
+                    "Zipcode": "90032"
+                },
+                {
+                    "Candidate_ID": "C00458331",
+                    "City": "BURBANK",
+                    "District": "32",
+                    "First": " GILBERT",
+                    "Last": "CEDILLO",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91502"
+                },
+                {
+                    "Candidate_ID": "C00458752",
+                    "City": "SOUTH EL MONTE",
+                    "District": "32",
+                    "First": " TERESA",
+                    "Last": "HERNANDEZ",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91733"
+                },
+                {
+                    "Candidate_ID": "C00458851",
+                    "City": "LOS ANGELES",
+                    "District": "32",
+                    "First": " EMANUEL",
+                    "Last": "PLEITEZ",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90032"
+                },
+                {
+                    "Candidate_ID": "C00459537",
+                    "City": "COVINA",
+                    "District": "32",
+                    "First": " DAVID ALLEN",
+                    "Last": "TRUAX",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91724"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LOS ANGELES",
+                    "District": "32",
+                    "First": " HOWARD ESQ",
+                    "Last": "JOHNSON",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "90062"
+                },
+                {
+                    "Candidate_ID": "C00460519",
+                    "City": "MONTEREY PARK",
+                    "District": "32",
+                    "First": " FRANCISCO",
+                    "Last": "ALONSO",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91755"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MONTCLAIR",
+                    "District": "32",
+                    "First": " CHRISTOPHER",
+                    "Last": "AGRELLA",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "91763"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "CULVER CITY",
+                    "District": "32",
+                    "First": " MOHAMMAD",
+                    "Last": "ARIF",
+                    "Party": "PAF",
+                    "State": "CA",
+                    "Zipcode": "90230"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "AZUSA",
+                    "District": "32",
+                    "First": " M. WAYNE",
+                    "Last": "BLAKE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91702"
+                },
+                {
+                    "Candidate_ID": "C00461079",
+                    "City": "MONTEREY PARK",
+                    "District": "32",
+                    "First": " BETTY",
+                    "Last": "CHU",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91754"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "EAST LOS ANGELES",
+                    "District": "32",
+                    "First": " BENITA",
+                    "Last": "DURAN",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90063"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LOS ANGELES",
+                    "District": "32",
+                    "First": " ANDRES",
+                    "Last": "ESTRADA",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90063"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "VAN NUYS",
+                    "District": "32",
+                    "First": " STEFAN (CONTRERAS)",
+                    "Last": "LYSENKO",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91413"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LOS ANGELES",
+                    "District": "32",
+                    "First": " WILLIAM (RODRIGUEZ)",
+                    "Last": "MORRISON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90033"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ROSEMEAD",
+                    "District": "32",
+                    "First": " RAFAEL F.",
+                    "Last": "NADAL",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91770"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "GLENDALE",
+                    "District": "32",
+                    "First": " TERRENCE (TERRY)",
+                    "Last": "RATHBUN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91205"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WEST COVINA",
+                    "District": "32",
+                    "First": " SALVADOR",
+                    "Last": "SANTANA",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91790"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN GABRIEL",
+                    "District": "32",
+                    "First": " MARGARITA MARIE",
+                    "Last": "WONG",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91778"
+                },
+                {
+                    "Candidate_ID": "C00461319",
+                    "City": "LOS ANGELES",
+                    "District": "32",
+                    "First": " LARRY DEAN",
+                    "Last": "SCARBOROUGH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90034"
+                },
+                {
+                    "Candidate_ID": "C00484337",
+                    "City": "WEST COVINA",
+                    "District": "32",
+                    "First": " EDWARD",
+                    "Last": "SCHMERLING",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91792"
+                },
+                {
+                    "Candidate_ID": "C00460170",
+                    "City": "LOS ANGELES",
+                    "District": "33",
+                    "First": " FELTON",
+                    "Last": "NEWELL",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90036"
+                },
+                {
+                    "Candidate_ID": "C00474023",
+                    "City": "LOS ANGELES",
+                    "District": "33",
+                    "First": " BENJAMIN",
+                    "Last": "DEGROOT",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "90028"
+                },
+                {
+                    "Candidate_ID": "C00474288",
+                    "City": "LOS ANGELES",
+                    "District": "33",
+                    "First": " MERVIN LEON",
+                    "Last": "EVANS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90016"
+                },
+                {
+                    "Candidate_ID": "C00476523",
+                    "City": "Los Angeles",
+                    "District": "33",
+                    "First": " KAREN",
+                    "Last": "BASS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90017"
+                },
+                {
+                    "Candidate_ID": "C00478131",
+                    "City": "BURBANK",
+                    "District": "33",
+                    "First": " HOWARD C",
+                    "Last": "MANDEL",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91502"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LOS ANGELES",
+                    "District": "33",
+                    "First": " PHIL",
+                    "Last": "JENNERJAHN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90038"
+                },
+                {
+                    "Candidate_ID": "C00480327",
+                    "City": "LOS ANGELES",
+                    "District": "33",
+                    "First": " LUIS",
+                    "Last": "MONTOYA",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90019"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "INGLEWOOD",
+                    "District": "33",
+                    "First": " MORRIS F",
+                    "Last": "GRIFFIN",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90301"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LOS ANGELES",
+                    "District": "33",
+                    "First": " JAMES L",
+                    "Last": "ANDION",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90071"
+                },
+                {
+                    "Candidate_ID": "C00484444",
+                    "City": "LOS ANGELES",
+                    "District": "33",
+                    "First": " NICK JUAN",
+                    "Last": "MOSTERT",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "     "
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LOS ANGELES",
+                    "District": "34",
+                    "First": " DAVID",
+                    "Last": "SANCHEZ",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90023"
+                },
+                {
+                    "Candidate_ID": "C00483560",
+                    "City": "PLAYA DEL REY",
+                    "District": "35",
+                    "First": " K BRUCE",
+                    "Last": "BROWN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90293"
+                },
+                {
+                    "Candidate_ID": "C00467985",
+                    "City": "REDONDO BEACH",
+                    "District": "36",
+                    "First": " PETE",
+                    "Last": "KESTERSON",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90277"
+                },
+                {
+                    "Candidate_ID": "C00470419",
+                    "City": "REDONDO BEACH",
+                    "District": "36",
+                    "First": " MATTIE",
+                    "Last": "FEIN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90278"
+                },
+                {
+                    "Candidate_ID": "C00481317",
+                    "City": "LONG BEACH",
+                    "District": "36",
+                    "First": " ANDREW JAMES",
+                    "Last": "SHARP",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90815"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "CARSON",
+                    "District": "36",
+                    "First": " HERB",
+                    "Last": "PETERS",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "90745"
+                },
+                {
+                    "Candidate_ID": "C00477596",
+                    "City": "LONG BEACH",
+                    "District": "37",
+                    "First": " TERRANCE",
+                    "Last": "PONCHAK",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90807"
+                },
+                {
+                    "Candidate_ID": "C00479352",
+                    "City": "CARSON",
+                    "District": "37",
+                    "First": " STAR",
+                    "Last": "PARKER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90749"
+                },
+                {
+                    "Candidate_ID": "C00434977",
+                    "City": "LOS ANGELES",
+                    "District": "37",
+                    "First": " GERRIE",
+                    "Last": "SCHIPSKE",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "90071"
+                },
+                {
+                    "Candidate_ID": "C00482505",
+                    "City": "MONROVIA",
+                    "District": "38",
+                    "First": " ROBERT WILLIAM",
+                    "Last": "VAUGHN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91016"
+                },
+                {
+                    "Candidate_ID": "C00481812",
+                    "City": "SHERMAN OAKS",
+                    "District": "38",
+                    "First": " TRACY LYNN",
+                    "Last": "TURNER",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "91403"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LYNWOOD",
+                    "District": "38",
+                    "First": " CHRIS",
+                    "Last": "SMITH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90262"
+                },
+                {
+                    "Candidate_ID": "C00472118",
+                    "City": "LAKEWOOD",
+                    "District": "39",
+                    "First": " LARRY STEVEN",
+                    "Last": "ANDRE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90713"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LAMIRADA",
+                    "District": "39",
+                    "First": " JOHN ALBERT",
+                    "Last": "SMITH",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "90637"
+                },
+                {
+                    "Candidate_ID": "C00467563",
+                    "City": "CHINO",
+                    "District": "42",
+                    "First": " LEE",
+                    "Last": "MCGROARTY",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "94710"
+                },
+                {
+                    "Candidate_ID": "C00474114",
+                    "City": "WHITTIER",
+                    "District": "42",
+                    "First": " PHILIP LAURENCE",
+                    "Last": "LIBERATORE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90605"
+                },
+                {
+                    "Candidate_ID": "C00479097",
+                    "City": "DIAMOND BAR",
+                    "District": "42",
+                    "First": " DAVID SEOKBEOM",
+                    "Last": "SU",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91765"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MISSION VIEJO",
+                    "District": "42",
+                    "First": " MARK",
+                    "Last": "LAMBERT",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "92692"
+                },
+                {
+                    "Candidate_ID": "C00351122",
+                    "City": "Riverside",
+                    "District": "44",
+                    "First": " MARTIN",
+                    "Last": "COLLEN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92507"
+                },
+                {
+                    "Candidate_ID": "C00462937",
+                    "City": "CORONA",
+                    "District": "44",
+                    "First": " CHRISTOPHER SCOTT",
+                    "Last": "RIGGS",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92882"
+                },
+                {
+                    "Candidate_ID": "C00459842",
+                    "City": "BURBANK",
+                    "District": "45",
+                    "First": " STEPHEN P",
+                    "Last": "POUGNET",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91502"
+                },
+                {
+                    "Candidate_ID": "C00467720",
+                    "City": "HEMET",
+                    "District": "45",
+                    "First": " CLAYTON DEL",
+                    "Last": "THIBODEAU",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92545"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MENIFEE",
+                    "District": "45",
+                    "First": " BILL",
+                    "Last": "LUSSENHEIDE",
+                    "Party": "AIP",
+                    "State": "CA",
+                    "Zipcode": "92585"
+                },
+                {
+                    "Candidate_ID": "C00474668",
+                    "City": "Los Angeles",
+                    "District": "46",
+                    "First": " BARAK",
+                    "Last": "LURIE",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "90064"
+                },
+                {
+                    "Candidate_ID": "C00475830",
+                    "City": "BURBANK",
+                    "District": "46",
+                    "First": " KENNETH",
+                    "Last": "ARNOLD",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91502"
+                },
+                {
+                    "Candidate_ID": "C00461962",
+                    "City": "WESTMINSTER",
+                    "District": "47",
+                    "First": " VAN",
+                    "Last": "TRAN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92683"
+                },
+                {
+                    "Candidate_ID": "C00463810",
+                    "City": "GARDEN GROVE",
+                    "District": "47",
+                    "First": " QUANG X",
+                    "Last": "PHAM",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92841"
+                },
+                {
+                    "Candidate_ID": "C00467845",
+                    "City": "SANTA ANA",
+                    "District": "47",
+                    "First": " CECILIA PATRICIA",
+                    "Last": "IGLESIAS",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "92704"
+                },
+                {
+                    "Candidate_ID": "C00475327",
+                    "City": "RANCHO SANTA MARGA",
+                    "District": "47",
+                    "First": " GARY 'JET'",
+                    "Last": "SCHANK",
+                    "Party": "IND",
+                    "State": "CA",
+                    "Zipcode": "92688"
+                },
+                {
+                    "Candidate_ID": "C00482869",
+                    "City": "OCEANSIDE",
+                    "District": "47",
+                    "First": " TAN D",
+                    "Last": "NGUYEN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92057"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ANAHEIM",
+                    "District": "47",
+                    "First": " KATHERINE H",
+                    "Last": "SMITH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92804"
+                },
+                {
+                    "Candidate_ID": "C00350520",
+                    "City": "VISTA",
+                    "District": "49",
+                    "First": " DARRELL",
+                    "Last": "ISSA",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92085"
+                },
+                {
+                    "Candidate_ID": "C00383885",
+                    "City": "LA MESA",
+                    "District": "50",
+                    "First": " BILL",
+                    "Last": "MORROW",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92008"
+                },
+                {
+                    "Candidate_ID": "C00459735",
+                    "City": "BURBANK",
+                    "District": "48",
+                    "First": " BETH",
+                    "Last": "KROM",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "91502"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "LAGUNA WOODS",
+                    "District": "48",
+                    "First": " MIKE",
+                    "Last": "BINKLEY",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "92637"
+                },
+                {
+                    "Candidate_ID": "C00344671",
+                    "City": "SAN DIEGO",
+                    "District": "53",
+                    "First": " SUSAN A",
+                    "Last": "DAVIS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "92116"
+                },
+                {
+                    "Candidate_ID": "C00471441",
+                    "City": "TEMECULA",
+                    "District": "49",
+                    "First": " HOWARD LOUIS",
+                    "Last": "KATZ",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "92592"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN DIEGO",
+                    "District": "49",
+                    "First": " DION",
+                    "Last": "CLARK",
+                    "Party": "AIP",
+                    "State": "CA",
+                    "Zipcode": "92104"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "FALLBROOK",
+                    "District": "49",
+                    "First": " MIKE",
+                    "Last": "PASTER",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "92028"
+                },
+                {
+                    "Candidate_ID": "C00458133",
+                    "City": "ESCONDIDO",
+                    "District": "50",
+                    "First": " TRACY",
+                    "Last": "EMBLEM",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "92025"
+                },
+                {
+                    "Candidate_ID": "C00466912",
+                    "City": "SOLANA BEACH",
+                    "District": "50",
+                    "First": " DAVID W",
+                    "Last": "ROBERTS",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "92075"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "OCEANSIDE",
+                    "District": "50",
+                    "First": " LARS",
+                    "Last": "GROSSMITH",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "92056"
+                },
+                {
+                    "Candidate_ID": "C00468124",
+                    "City": "SAN DIEGO",
+                    "District": "51",
+                    "First": " WILLIAM DAVID",
+                    "Last": "MCLEROY",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92154"
+                },
+                {
+                    "Candidate_ID": "C00468249",
+                    "City": "CHULA VISTA",
+                    "District": "51",
+                    "First": " NICHOLAS ALLEN",
+                    "Last": "POPADITCH",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91910"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SANTEE",
+                    "District": "52",
+                    "First": " MICHAEL",
+                    "Last": "BENOIT",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "92071"
+                },
+                {
+                    "Candidate_ID": "C00477000",
+                    "City": "RAMONA",
+                    "District": "52",
+                    "First": " TERRI RUTH",
+                    "Last": "LINNELL",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92065"
+                },
+                {
+                    "Candidate_ID": "C00479477",
+                    "City": "EL CAJON",
+                    "District": "52",
+                    "First": " RAYMOND CLARK",
+                    "Last": "LUTZ",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "92020"
+                },
+                {
+                    "Candidate_ID": "C00458182",
+                    "City": "SAN DIEGO",
+                    "District": "53",
+                    "First": " MATT",
+                    "Last": "FRIEDMAN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92103"
+                },
+                {
+                    "Candidate_ID": "C00469684",
+                    "City": "SAN DIEGO",
+                    "District": "53",
+                    "First": " CLARENCE MASON",
+                    "Last": "WEAVER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92163"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN DIEGO",
+                    "District": "53",
+                    "First": " CHARLES MILLER II",
+                    "Last": "MERRIMAN",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92109"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "SAN DIEGO",
+                    "District": "53",
+                    "First": " PAUL",
+                    "Last": "DEKKER",
+                    "Party": "LIB",
+                    "State": "CA",
+                    "Zipcode": "92120"
+                },
+                {
+                    "Candidate_ID": "C00020974",
+                    "City": "Fremont",
+                    "District": "13",
+                    "First": " FORTNEY P.",
+                    "Last": "STARK",
+                    "Party": "DEM",
+                    "State": "CA",
+                    "Zipcode": "94537"
+                },
+                {
+                    "Candidate_ID": "C00088658",
+                    "City": "UPLAND",
+                    "District": "26",
+                    "First": " DAVID",
+                    "Last": "DREIER",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "91785"
+                },
+                {
+                    "Candidate_ID": "C00090357",
+                    "City": "Redlands",
+                    "District": "41",
+                    "First": " JERRY",
+                    "Last": "LEWIS",
+                    "Party": "REP",
+                    "State": "CA",
+                    "Zipcode": "92373"
+                }
+            ],
+            "GA": [
+                {
+                    "Candidate_ID": "C00469916",
+                    "City": "PEACHTREE CITY",
+                    "District": "53",
+                    "First": " RANDALL STEVEN PHD",
+                    "Last": "ARRINGTON",
+                    "Party": "REP",
+                    "State": "GA",
+                    "Zipcode": "30269"
+                }
+            ],
+            "CO": [
+                {
+                    "Candidate_ID": "C00471276",
+                    "City": "FORT COLLINS",
+                    "District": "04",
+                    "First": " DIGGS",
+                    "Last": "BROWN",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80521"
+                },
+                {
+                    "Candidate_ID": "C00481648",
+                    "City": "DENVER",
+                    "District": "01",
+                    "First": " MICHAEL PETER",
+                    "Last": "FALLON",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80209"
+                },
+                {
+                    "Candidate_ID": "C00482331",
+                    "City": "AURORA",
+                    "District": "01",
+                    "First": " KELLY D",
+                    "Last": "STANDLEY",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80011"
+                },
+                {
+                    "Candidate_ID": "C00483776",
+                    "City": "DENVER",
+                    "District": "01",
+                    "First": " CHRISTOPHER THOMAS",
+                    "Last": "STYSKAL",
+                    "Party": "CST",
+                    "State": "CO",
+                    "Zipcode": "80204"
+                },
+                {
+                    "Candidate_ID": "C00468710",
+                    "City": "PENROSE",
+                    "District": "01",
+                    "First": " STEVEN DR",
+                    "Last": "BARTON",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "81240"
+                },
+                {
+                    "Candidate_ID": "C00490318",
+                    "City": "DENVER",
+                    "District": "01",
+                    "First": " CLINTON DOUGLAS",
+                    "Last": "JONES",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "80219"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "DENVER",
+                    "District": "01",
+                    "First": " JEFFREY",
+                    "Last": "SCHITTER",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "80212"
+                },
+                {
+                    "Candidate_ID": "C00472563",
+                    "City": "HIWOT",
+                    "District": "02",
+                    "First": " STEPHEN",
+                    "Last": "BAILEY",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80503"
+                },
+                {
+                    "Candidate_ID": "C00473348",
+                    "City": "FIRESTONE",
+                    "District": "02",
+                    "First": " BOB",
+                    "Last": "BRANCATO",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80520"
+                },
+                {
+                    "Candidate_ID": "C00473975",
+                    "City": "ARVADA",
+                    "District": "02",
+                    "First": " CURTIS LEE",
+                    "Last": "HARRIS",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "80007"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WESTMINSTER",
+                    "District": "02",
+                    "First": " KENNETH JEFFREY DR",
+                    "Last": "POLKE",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80031"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "DENVER",
+                    "District": "02",
+                    "First": " JENNA",
+                    "Last": "GOSS",
+                    "Party": "OTH",
+                    "State": "CO",
+                    "Zipcode": "80221"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "JAMESTOWN",
+                    "District": "02",
+                    "First": " HENRY",
+                    "Last": "RAIBOURN",
+                    "Party": "DEM",
+                    "State": "CO",
+                    "Zipcode": "80455"
+                },
+                {
+                    "Candidate_ID": "C00460956",
+                    "City": "RIFLE",
+                    "District": "03",
+                    "First": " MARTIN C",
+                    "Last": "BEESON",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "81650"
+                },
+                {
+                    "Candidate_ID": "C00465310",
+                    "City": "GRAND JUNCTION",
+                    "District": "03",
+                    "First": " DOUGLAS BOMAR",
+                    "Last": "THOMPSON",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "81506"
+                },
+                {
+                    "Candidate_ID": "C00468108",
+                    "City": "STEAMBOAT SPRINGS",
+                    "District": "03",
+                    "First": " ROBERT M",
+                    "Last": "MCCONNELL",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80488"
+                },
+                {
+                    "Candidate_ID": "C00476184",
+                    "City": "FRUITA",
+                    "District": "03",
+                    "First": " JAKE",
+                    "Last": "SEGREST",
+                    "Party": "IND",
+                    "State": "CO",
+                    "Zipcode": "81521"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WESTCLIFFE",
+                    "District": "03",
+                    "First": " GREGORY",
+                    "Last": "GILMAN",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "81252"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "DEL NORTE",
+                    "District": "03",
+                    "First": " JOHN W. SR",
+                    "Last": "HARGIS",
+                    "Party": "UNK",
+                    "State": "CO",
+                    "Zipcode": "81132"
+                },
+                {
+                    "Candidate_ID": "C00457879",
+                    "City": "JOHNSTOWN",
+                    "District": "04",
+                    "First": " THOMAS JOSEPH",
+                    "Last": "LUCERO",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80534"
+                },
+                {
+                    "Candidate_ID": "C00461749",
+                    "City": "Loveland",
+                    "District": "04",
+                    "First": " CORY SCOTT REP.",
+                    "Last": "GARDNER",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80539"
+                },
+                {
+                    "Candidate_ID": "C00470781",
+                    "City": "LOVELAND",
+                    "District": "04",
+                    "First": " DEAN MATTHEW",
+                    "Last": "MADERE",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80537"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "FORT LUPTON",
+                    "District": "04",
+                    "First": " DOUG",
+                    "Last": "ADEN",
+                    "Party": "OTH",
+                    "State": "CO",
+                    "Zipcode": "80621"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "FORT COLLINS",
+                    "District": "04",
+                    "First": " JASSEN",
+                    "Last": "BOWMAN",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "80521"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "FORT COLLINS",
+                    "District": "04",
+                    "First": " ROCHE",
+                    "Last": "FAHLANEIGH",
+                    "Party": "UNK",
+                    "State": "CO",
+                    "Zipcode": "80526"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "FORT COLLINS",
+                    "District": "04",
+                    "First": " KEN 'WASKO'",
+                    "Last": "WASZKIEWICZ",
+                    "Party": "UNK",
+                    "State": "CO",
+                    "Zipcode": "80525"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "EVANS",
+                    "District": "04",
+                    "First": " MICHAEL",
+                    "Last": "NELSON",
+                    "Party": "OTH",
+                    "State": "CO",
+                    "Zipcode": "80620"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "FLORENCE",
+                    "District": "05",
+                    "First": " KEVIN",
+                    "Last": "BRADLEY",
+                    "Party": "DEM",
+                    "State": "CO",
+                    "Zipcode": "81226"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WOODLAND PARK",
+                    "District": "05",
+                    "First": " JERELL",
+                    "Last": "KLAVER",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "80863"
+                },
+                {
+                    "Candidate_ID": "C00456996",
+                    "City": "HIGHLANDS RANCH",
+                    "District": "06",
+                    "First": " DAVID",
+                    "Last": "CANTER",
+                    "Party": "DEM",
+                    "State": "CO",
+                    "Zipcode": "80139"
+                },
+                {
+                    "Candidate_ID": "C00458638",
+                    "City": "LITTLETON",
+                    "District": "06",
+                    "First": " JOHN",
+                    "Last": "FLERLAGE",
+                    "Party": "DEM",
+                    "State": "CO",
+                    "Zipcode": "80160"
+                },
+                {
+                    "Candidate_ID": "C00474155",
+                    "City": "AURORA",
+                    "District": "06",
+                    "First": " ROBERT LEE",
+                    "Last": "MCNEALY",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "80013"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "EVERGREEN",
+                    "District": "06",
+                    "First": " MICHAEL SHAWN",
+                    "Last": "KEARNS",
+                    "Party": "UNK",
+                    "State": "CO",
+                    "Zipcode": "80439"
+                },
+                {
+                    "Candidate_ID": "C00459511",
+                    "City": "ARVADA",
+                    "District": "07",
+                    "First": " BRIAN T SR",
+                    "Last": "CAMPBELL",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80004"
+                },
+                {
+                    "Candidate_ID": "C00461020",
+                    "City": "EDGEWATER",
+                    "District": "07",
+                    "First": " RYAN L",
+                    "Last": "FRAZIER",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80214"
+                },
+                {
+                    "Candidate_ID": "C00469379",
+                    "City": "AURORA",
+                    "District": "07",
+                    "First": " MICHAEL",
+                    "Last": "DEMING",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80012"
+                },
+                {
+                    "Candidate_ID": "C00469593",
+                    "City": "BENNETT",
+                    "District": "07",
+                    "First": " MICHAEL L",
+                    "Last": "SHEELY",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80102"
+                },
+                {
+                    "Candidate_ID": "C00474627",
+                    "City": "ARVADA",
+                    "District": "07",
+                    "First": " JIMMY",
+                    "Last": "LAKEY",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80001"
+                },
+                {
+                    "Candidate_ID": "C00471516",
+                    "City": "ARVADA",
+                    "District": "07",
+                    "First": " LANGHORNE C",
+                    "Last": "SIAS",
+                    "Party": "REP",
+                    "State": "CO",
+                    "Zipcode": "80007"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "AURORA",
+                    "District": "07",
+                    "First": " BUCK",
+                    "Last": "BAILEY",
+                    "Party": "LIB",
+                    "State": "CO",
+                    "Zipcode": "80017"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WHEAT RIDGE",
+                    "District": "07",
+                    "First": " BUDDY",
+                    "Last": "MOORE",
+                    "Party": "UNK",
+                    "State": "CO",
+                    "Zipcode": "80214"
+                }
+            ],
+            "CT": [
+                {
+                    "Candidate_ID": "C00479048",
+                    "City": "WEST HARTFORD",
+                    "District": "01",
+                    "First": " MARK",
+                    "Last": "ZYDANOWICZ",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06127"
+                },
+                {
+                    "Candidate_ID": "C00481671",
+                    "City": "WETHERSFIELD",
+                    "District": "01",
+                    "First": " ANN",
+                    "Last": "BRICKLEY",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06109"
+                },
+                {
+                    "Candidate_ID": "C00488395",
+                    "City": "SOUTH WINDSOR",
+                    "District": "01",
+                    "First": " KENNETH JAMES",
+                    "Last": "KRAYESKE",
+                    "Party": "GRE",
+                    "State": "CT",
+                    "Zipcode": "06074"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "HARTFORD",
+                    "District": "01",
+                    "First": " CHRISTOPHER J",
+                    "Last": "HUTCHINSON",
+                    "Party": "OTH",
+                    "State": "CT",
+                    "Zipcode": "06106"
+                },
+                {
+                    "Candidate_ID": "C00459875",
+                    "City": "SOUTH GLASTONBURY",
+                    "District": "02",
+                    "First": " MATTHEW MOULTON",
+                    "Last": "DALY",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06073"
+                },
+                {
+                    "Candidate_ID": "C00461012",
+                    "City": "MADISON",
+                    "District": "02",
+                    "First": " DARIA IRENE",
+                    "Last": "NOVAK",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06443"
+                },
+                {
+                    "Candidate_ID": "C00480715",
+                    "City": "MADISON",
+                    "District": "02",
+                    "First": " WESLEY MARTIN",
+                    "Last": "MULLEN",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06443"
+                },
+                {
+                    "Candidate_ID": "C00482653",
+                    "City": "CHAPLIN",
+                    "District": "02",
+                    "First": " DOUG",
+                    "Last": "DUBITSKY",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06235"
+                },
+                {
+                    "Candidate_ID": "C00482885",
+                    "City": "ESSEX",
+                    "District": "02",
+                    "First": " JANET",
+                    "Last": "PECKINPAUGH",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06426"
+                },
+                {
+                    "Candidate_ID": "C00238865",
+                    "City": "NEW HAVEN",
+                    "District": "03",
+                    "First": " ROSA L",
+                    "Last": "DELAURO",
+                    "Party": "DEM",
+                    "State": "CT",
+                    "Zipcode": "06511"
+                },
+                {
+                    "Candidate_ID": "C00467969",
+                    "City": "WALLINGFORD",
+                    "District": "03",
+                    "First": " JERRY JR.",
+                    "Last": "LABRIOLA",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06492"
+                },
+                {
+                    "Candidate_ID": "C00468389",
+                    "City": "MILFORD",
+                    "District": "03",
+                    "First": " MARGARET H",
+                    "Last": "ROGERS",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06461"
+                },
+                {
+                    "Candidate_ID": "C00479790",
+                    "City": "EAST HAVEN",
+                    "District": "03",
+                    "First": " JEFFREY M",
+                    "Last": "CHENEY",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06513"
+                },
+                {
+                    "Candidate_ID": "C00484006",
+                    "City": "GUILFORD",
+                    "District": "03",
+                    "First": " MATTHEW JASON",
+                    "Last": "JOSEFF",
+                    "Party": "IND",
+                    "State": "CT",
+                    "Zipcode": "06437"
+                },
+                {
+                    "Candidate_ID": "C00359372",
+                    "City": "STAMFORD",
+                    "District": "04",
+                    "First": " STEPHANIE HUNTER",
+                    "Last": "SANCHEZ",
+                    "Party": "DEM",
+                    "State": "CT",
+                    "Zipcode": "06905"
+                },
+                {
+                    "Candidate_ID": "C00464875",
+                    "City": "STAMFORD",
+                    "District": "04",
+                    "First": " WILL",
+                    "Last": "GREGORY",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06904"
+                },
+                {
+                    "Candidate_ID": "C00465047",
+                    "City": "WILTON",
+                    "District": "04",
+                    "First": " ROBERT",
+                    "Last": "MERKLE",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06897"
+                },
+                {
+                    "Candidate_ID": "C00465534",
+                    "City": "SHELTON",
+                    "District": "04",
+                    "First": " DAN",
+                    "Last": "DEBICELLA",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06484"
+                },
+                {
+                    "Candidate_ID": "C00465930",
+                    "City": "BRIDGEPORT",
+                    "District": "04",
+                    "First": " ROBERT",
+                    "Last": "RUSSO",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06055"
+                },
+                {
+                    "Candidate_ID": "C00469692",
+                    "City": "BRIDGEPORT",
+                    "District": "04",
+                    "First": " ENRIQUE RAUL",
+                    "Last": "TORRES",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06605"
+                },
+                {
+                    "Candidate_ID": "C00479006",
+                    "City": "WILTON",
+                    "District": "04",
+                    "First": " THOMAS A",
+                    "Last": "HERRMANN",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06897"
+                },
+                {
+                    "Candidate_ID": "C00303313",
+                    "City": "WATERBURY",
+                    "District": "05",
+                    "First": " GARY A",
+                    "Last": "FRANKS",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06723"
+                },
+                {
+                    "Candidate_ID": "C00461053",
+                    "City": "PLAINVILLE",
+                    "District": "05",
+                    "First": " JUSTIN",
+                    "Last": "BERNIER",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06062"
+                },
+                {
+                    "Candidate_ID": "C00462663",
+                    "City": "BROOKFIELD",
+                    "District": "05",
+                    "First": " JOHN",
+                    "Last": "PISTONE",
+                    "Party": "IND",
+                    "State": "CT",
+                    "Zipcode": "06804"
+                },
+                {
+                    "Candidate_ID": "C00465989",
+                    "City": "WATERBURY",
+                    "District": "05",
+                    "First": " DANIEL E",
+                    "Last": "CARTER",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06703"
+                },
+                {
+                    "Candidate_ID": "C00466623",
+                    "City": "SOUTHBURY",
+                    "District": "05",
+                    "First": " KIE",
+                    "Last": "WESTBY",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06488"
+                },
+                {
+                    "Candidate_ID": "C00469122",
+                    "City": "LITCHFIELD",
+                    "District": "05",
+                    "First": " MARK DANIEL",
+                    "Last": "GREENBERG",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06759"
+                },
+                {
+                    "Candidate_ID": "C00469742",
+                    "City": "WOLCOTT",
+                    "District": "05",
+                    "First": " WILLIAM J JR",
+                    "Last": "EVANS",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06705"
+                },
+                {
+                    "Candidate_ID": "C00471219",
+                    "City": "WATERBURY",
+                    "District": "05",
+                    "First": " SAM",
+                    "Last": "CALIGIURI",
+                    "Party": "REP",
+                    "State": "CT",
+                    "Zipcode": "06705"
+                }
+            ],
+            "DE": [
+                {
+                    "Candidate_ID": "C00455006",
+                    "City": "LEWES",
+                    "District": "00",
+                    "First": " MICHEAL CARLTON SR",
+                    "Last": "MILLER",
+                    "Party": "DEM",
+                    "State": "DE",
+                    "Zipcode": "19958"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WILMINGTON",
+                    "District": "00",
+                    "First": " SCOTT RICHARD",
+                    "Last": "SPENCER",
+                    "Party": "DEM",
+                    "State": "DE",
+                    "Zipcode": "19899"
+                },
+                {
+                    "Candidate_ID": "C00470831",
+                    "City": "HOCKESSIN",
+                    "District": "00",
+                    "First": " FREDERICK R",
+                    "Last": "CULLIS",
+                    "Party": "REP",
+                    "State": "DE",
+                    "Zipcode": "19707"
+                },
+                {
+                    "Candidate_ID": "C00472209",
+                    "City": "CLAYTON",
+                    "District": "00",
+                    "First": " EARL R",
+                    "Last": "LOFLAND",
+                    "Party": "OTH",
+                    "State": "DE",
+                    "Zipcode": "19938"
+                },
+                {
+                    "Candidate_ID": "C00472902",
+                    "City": "TOWNSEND",
+                    "District": "00",
+                    "First": " DOUGLAS ALLEN JR",
+                    "Last": "CAMPBELL",
+                    "Party": "CON",
+                    "State": "DE",
+                    "Zipcode": "19734"
+                },
+                {
+                    "Candidate_ID": "C00475418",
+                    "City": "MILLSBORO",
+                    "District": "00",
+                    "First": " BRENT",
+                    "Last": "WANGEN",
+                    "Party": "LIB",
+                    "State": "DE",
+                    "Zipcode": "19966"
+                },
+                {
+                    "Candidate_ID": "C00477844",
+                    "City": "NEW CASTLE",
+                    "District": "00",
+                    "First": " KEVIN LYNN",
+                    "Last": "WADE",
+                    "Party": "REP",
+                    "State": "DE",
+                    "Zipcode": "19720"
+                },
+                {
+                    "Candidate_ID": "C00480558",
+                    "City": "WILMINGTON",
+                    "District": "00",
+                    "First": " MICHELE M",
+                    "Last": "ROLLINS",
+                    "Party": "REP",
+                    "State": "DE",
+                    "Zipcode": "19899"
+                },
+                {
+                    "Candidate_ID": "C00460899",
+                    "City": "Wilmington",
+                    "District": "01",
+                    "First": " JOHN CHARLES JR",
+                    "Last": "CARNEY",
+                    "Party": "DEM",
+                    "State": "DE",
+                    "Zipcode": "19802"
+                },
+                {
+                    "Candidate_ID": "C00473421",
+                    "City": "WILMINGTON",
+                    "District": "01",
+                    "First": " ROSE",
+                    "Last": "IZZO",
+                    "Party": "REP",
+                    "State": "DE",
+                    "Zipcode": "19810"
+                },
+                {
+                    "Candidate_ID": "C00476309",
+                    "City": "REHOBOTH BEACH",
+                    "District": "01",
+                    "First": " GLEN",
+                    "Last": "URQUHART",
+                    "Party": "REP",
+                    "State": "DE",
+                    "Zipcode": "19971"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "WILMINGTON",
+                    "District": "01",
+                    "First": " JEFFREY",
+                    "Last": "BROWN",
+                    "Party": "OTH",
+                    "State": "DE",
+                    "Zipcode": "19805"
+                }
+            ],
+            "FL": [
+                {
+                    "Candidate_ID": "C00466060",
+                    "City": "PENSACOLA",
+                    "District": "01",
+                    "First": " JOHN E",
+                    "Last": "KRAUSE",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32504"
+                },
+                {
+                    "Candidate_ID": "C00467407",
+                    "City": "FORT WALTON BEACH",
+                    "District": "01",
+                    "First": " HENRY ARTHUR JR",
+                    "Last": "KELLEY",
+                    "Party": "UNK",
+                    "State": "FL",
+                    "Zipcode": "32548"
+                },
+                {
+                    "Candidate_ID": "C00485300",
+                    "City": "PACE",
+                    "District": "01",
+                    "First": " JOSEPH HENRY JR",
+                    "Last": "CANTRELL",
+                    "Party": "IND",
+                    "State": "FL",
+                    "Zipcode": "32571"
+                },
+                {
+                    "Candidate_ID": "C00460261",
+                    "City": "TALLAHASSEE",
+                    "District": "02",
+                    "First": " ALFRED 'AL' JR.",
+                    "Last": "LAWSON",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "32301"
+                },
+                {
+                    "Candidate_ID": "C00464255",
+                    "City": "LLOYD",
+                    "District": "02",
+                    "First": " PAUL CRANDALL",
+                    "Last": "MCKAIN",
+                    "Party": "OTH",
+                    "State": "FL",
+                    "Zipcode": "32337"
+                },
+                {
+                    "Candidate_ID": "C00465252",
+                    "City": "O'BRIEN",
+                    "District": "02",
+                    "First": " CARL EDWARD JR",
+                    "Last": "MEECE",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32071"
+                },
+                {
+                    "Candidate_ID": "C00468959",
+                    "City": "LYNN HAVEN",
+                    "District": "02",
+                    "First": " WILLIAM STEVE II",
+                    "Last": "SOUTHERLAND",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32444"
+                },
+                {
+                    "Candidate_ID": "C00469635",
+                    "City": "TALLAHASSEE",
+                    "District": "02",
+                    "First": " CHARLES",
+                    "Last": "RANSON",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32308"
+                },
+                {
+                    "Candidate_ID": "C00473264",
+                    "City": "MIRAMAR BEACH",
+                    "District": "02",
+                    "First": " RAYMOND HEATH",
+                    "Last": "NETHERWOOD",
+                    "Party": "IND",
+                    "State": "FL",
+                    "Zipcode": "32550"
+                },
+                {
+                    "Candidate_ID": "C00477505",
+                    "City": "NICEVILLE",
+                    "District": "02",
+                    "First": " DAVID EUGENE",
+                    "Last": "SCHOLL",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32578"
+                },
+                {
+                    "Candidate_ID": "C00476879",
+                    "City": "SANTA ROSA BEACH",
+                    "District": "02",
+                    "First": " BARBARA F",
+                    "Last": "OLSCHNER",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32459"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MONTICELLO",
+                    "District": "02",
+                    "First": " JOSEPH C",
+                    "Last": "DORN",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32344"
+                },
+                {
+                    "Candidate_ID": "C00483396",
+                    "City": "TALLAHASSEE",
+                    "District": "02",
+                    "First": " DIANNE JORDEN",
+                    "Last": "BERRYHILL",
+                    "Party": "NPA",
+                    "State": "FL",
+                    "Zipcode": "32308"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "MIRAMAR BEACH",
+                    "District": "02",
+                    "First": " RON",
+                    "Last": "MCNEIL",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32550"
+                },
+                {
+                    "Candidate_ID": "C00466243",
+                    "City": "JACKSONVILLE",
+                    "District": "03",
+                    "First": " JAMES NICHOLAS",
+                    "Last": "GILMAN",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32202"
+                },
+                {
+                    "Candidate_ID": "C00467704",
+                    "City": "GAINESVILLE",
+                    "District": "03",
+                    "First": " TERRY L",
+                    "Last": "MARTIN-BACK",
+                    "Party": "NPA",
+                    "State": "FL",
+                    "Zipcode": "32606"
+                },
+                {
+                    "Candidate_ID": "C00469387",
+                    "City": "ALACHUA",
+                    "District": "06",
+                    "First": " JOHN",
+                    "Last": "ANNARUMMA",
+                    "Party": "UNK",
+                    "State": "FL",
+                    "Zipcode": "32616"
+                },
+                {
+                    "Candidate_ID": "C00469288",
+                    "City": "JACKSONVILLE",
+                    "District": "03",
+                    "First": " GEORGE SCOTT",
+                    "Last": "MACNAUGHTON",
+                    "Party": "LIB",
+                    "State": "FL",
+                    "Zipcode": "32218"
+                },
+                {
+                    "Candidate_ID": "C00479030",
+                    "City": "FLEMING ISLAND",
+                    "District": "03",
+                    "First": " EUNA LEANNE",
+                    "Last": "KOLB",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32003"
+                },
+                {
+                    "Candidate_ID": "C00481739",
+                    "City": "ASTOR",
+                    "District": "03",
+                    "First": " DEAN A",
+                    "Last": "BLACK",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32102"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "JACKSONVILLE",
+                    "District": "03",
+                    "First": " ANTHONY PAUL",
+                    "Last": "PENOSO",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32221"
+                },
+                {
+                    "Candidate_ID": "C00483735",
+                    "City": "JACKSONVILLE",
+                    "District": "03",
+                    "First": " C CHRISTIAN",
+                    "Last": "NWASIKE",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32208"
+                },
+                {
+                    "Candidate_ID": "C00486076",
+                    "City": "JACKSONVILLE BEACH",
+                    "District": "03",
+                    "First": " SCOTT",
+                    "Last": "FORTUNE",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "32250"
+                },
+                {
+                    "Candidate_ID": "C00346767",
+                    "City": "JACKSONVILLE",
+                    "District": "04",
+                    "First": " DEBORAH KATZ",
+                    "Last": "PUESCHEL",
+                    "Party": "NNE",
+                    "State": "FL",
+                    "Zipcode": "32256"
+                },
+                {
+                    "Candidate_ID": "C00352849",
+                    "City": "JACKSONVILLE",
+                    "District": "04",
+                    "First": " ANDER HON",
+                    "Last": "CRENSHAW",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32204"
+                },
+                {
+                    "Candidate_ID": "C00463042",
+                    "City": "JACKSONVILLE",
+                    "District": "04",
+                    "First": " TROY DWAYNE",
+                    "Last": "STANLEY",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32226"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "JACKSONVILLE",
+                    "District": "04",
+                    "First": " GARY L",
+                    "Last": "KONIZ",
+                    "Party": "NNE",
+                    "State": "FL",
+                    "Zipcode": "32256"
+                },
+                {
+                    "Candidate_ID": "C00459859",
+                    "City": "MASCOTTE",
+                    "District": "05",
+                    "First": " THOMAS JOSEPH",
+                    "Last": "DOOLAN",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "34753"
+                },
+                {
+                    "Candidate_ID": "C00460642",
+                    "City": "LAND O LAKES",
+                    "District": "05",
+                    "First": " JAMES JOHN",
+                    "Last": "PICCILLO",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "34639"
+                },
+                {
+                    "Candidate_ID": "C00471862",
+                    "City": "BROOKSVILLE",
+                    "District": "05",
+                    "First": " JASON PATRICK",
+                    "Last": "SAGER",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "34601"
+                },
+                {
+                    "Candidate_ID": "C00482281",
+                    "City": "BROOKSVILLE",
+                    "District": "05",
+                    "First": " RICHARD B",
+                    "Last": "NUGENT",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "34604"
+                },
+                {
+                    "Candidate_ID": "C00462515",
+                    "City": "JACKSONVILLE",
+                    "District": "03",
+                    "First": " MICHAEL F ''MIKE''",
+                    "Last": "YOST",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32110"
+                },
+                {
+                    "Candidate_ID": "C00480608",
+                    "City": "OCALA",
+                    "District": "06",
+                    "First": " STEVEN",
+                    "Last": "SCHONBERG",
+                    "Party": "IND",
+                    "State": "FL",
+                    "Zipcode": "34480"
+                },
+                {
+                    "Candidate_ID": "C00480921",
+                    "City": "WEIRSDALE",
+                    "District": "06",
+                    "First": " DONALD EDWARD",
+                    "Last": "BROWNING",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32195"
+                },
+                {
+                    "Candidate_ID": "C00460881",
+                    "City": "DEBARY",
+                    "District": "07",
+                    "First": " STEPHEN",
+                    "Last": "BACON",
+                    "Party": "OTH",
+                    "State": "FL",
+                    "Zipcode": "32713"
+                },
+                {
+                    "Candidate_ID": "C00461731",
+                    "City": "ST AUGUSTINE",
+                    "District": "07",
+                    "First": " PETER",
+                    "Last": "SILVA",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "32084"
+                },
+                {
+                    "Candidate_ID": "C00463778",
+                    "City": "PALM COAST",
+                    "District": "07",
+                    "First": " HEATHER MAURINE",
+                    "Last": "BEAVEN",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "32137"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "HASTINGS",
+                    "District": "07",
+                    "First": " RALPH LEROY",
+                    "Last": "MORRIS",
+                    "Party": "UNK",
+                    "State": "FL",
+                    "Zipcode": "32145"
+                },
+                {
+                    "Candidate_ID": "C00345090",
+                    "City": "Orlando",
+                    "District": "08",
+                    "First": " RICHARD A.",
+                    "Last": "KELLER",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32802"
+                },
+                {
+                    "Candidate_ID": "C00347047",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " ROBERT (BOB) NELSON JR",
+                    "Last": "HERING",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32804"
+                },
+                {
+                    "Candidate_ID": "C00468017",
+                    "City": "WINDERMERE",
+                    "District": "08",
+                    "First": " DANIEL ROY",
+                    "Last": "FANELLI",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "34786"
+                },
+                {
+                    "Candidate_ID": "C00468090",
+                    "City": "EUSTIS",
+                    "District": "08",
+                    "First": " PATRICIA ANNE",
+                    "Last": "SULLIVAN",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32726"
+                },
+                {
+                    "Candidate_ID": "C00468850",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " PEG",
+                    "Last": "DUNMIRE",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32837"
+                },
+                {
+                    "Candidate_ID": "C00468983",
+                    "City": "TALLAHASSEE",
+                    "District": "08",
+                    "First": " ARMANDO JR",
+                    "Last": "GUTIERREZ",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32308"
+                },
+                {
+                    "Candidate_ID": "C00470096",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " KEVIN MICHAEL",
+                    "Last": "BUTLER",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32835"
+                },
+                {
+                    "Candidate_ID": "C00472936",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " PRINCE",
+                    "Last": "BROWN",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32860"
+                },
+                {
+                    "Candidate_ID": "C00474064",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " KURT",
+                    "Last": "KELLY",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32853"
+                },
+                {
+                    "Candidate_ID": "C00475459",
+                    "City": "OCALA",
+                    "District": "08",
+                    "First": " STEVEN J",
+                    "Last": "GERRITZEN",
+                    "Party": "UNK",
+                    "State": "FL",
+                    "Zipcode": "34483"
+                },
+                {
+                    "Candidate_ID": "C00475517",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " WILLIAM BRUCE",
+                    "Last": "ODONOGHUE",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32814"
+                },
+                {
+                    "Candidate_ID": "C00475731",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " TERRENCE NEAL SR",
+                    "Last": "TYSALL",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32836"
+                },
+                {
+                    "Candidate_ID": "C00481184",
+                    "City": "WINTER PARK",
+                    "District": "08",
+                    "First": " ROSS PARKER",
+                    "Last": "BIELING",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32789"
+                },
+                {
+                    "Candidate_ID": "C00481911",
+                    "City": "Orlando",
+                    "District": "08",
+                    "First": " DANIEL",
+                    "Last": "WEBSTER",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "32805"
+                },
+                {
+                    "Candidate_ID": "C00483180",
+                    "City": "ORLANDO",
+                    "District": "08",
+                    "First": " GEORGE L",
+                    "Last": "METCALFE",
+                    "Party": "IND",
+                    "State": "FL",
+                    "Zipcode": "32801"
+                },
+                {
+                    "Candidate_ID": "C00483511",
+                    "City": "LUTZ",
+                    "District": "09",
+                    "First": " PHIL",
+                    "Last": "HINDAHL",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "33549"
+                },
+                {
+                    "Candidate_ID": "C00461111",
+                    "City": "ST PETERSBURG",
+                    "District": "10",
+                    "First": " CHARLIE",
+                    "Last": "JUSTICE",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "33170"
+                },
+                {
+                    "Candidate_ID": "C00468769",
+                    "City": "PALM HARBOR",
+                    "District": "10",
+                    "First": " ERIC LEE",
+                    "Last": "FORCADE",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "34682"
+                },
+                {
+                    "Candidate_ID": "",
+                    "City": "ST PETERSBURG",
+                    "District": "10",
+                    "First": " MARTIN",
+                    "Last": "ROKICKI",
+                    "Party": "NNE",
+                    "State": "FL",
+                    "Zipcode": "33702"
+                },
+                {
+                    "Candidate_ID": "C00458711",
+                    "City": "LAND O LAKES",
+                    "District": "11",
+                    "First": " SCOTT THOMAS",
+                    "Last": "KELLER",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "34637"
+                },
+                {
+                    "Candidate_ID": "C00464321",
+                    "City": "TAMPA",
+                    "District": "11",
+                    "First": " STEVEN CRAIG",
+                    "Last": "STANFORD",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33611"
+                },
+                {
+                    "Candidate_ID": "C00468363",
+                    "City": "TAMPA",
+                    "District": "11",
+                    "First": " TONY",
+                    "Last": "BUNTYN",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33629"
+                },
+                {
+                    "Candidate_ID": "C00473330",
+                    "City": "TAMPA",
+                    "District": "11",
+                    "First": " MIKE",
+                    "Last": "PRENDERGAST",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33606"
+                },
+                {
+                    "Candidate_ID": "C00475038",
+                    "City": "TAMPA",
+                    "District": "11",
+                    "First": " THOMAS C",
+                    "Last": "CASTELLANO",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33607"
+                },
+                {
+                    "Candidate_ID": "C00483099",
+                    "City": "TAMPA",
+                    "District": "11",
+                    "First": " TIMOTHY LYNN",
+                    "Last": "CURTIS",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "33612"
+                },
+                {
+                    "Candidate_ID": "C00117119",
+                    "City": "Fort Lauderdale",
+                    "District": "22",
+                    "First": " E CLAY JR",
+                    "Last": "SHAW",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33303"
+                },
+                {
+                    "Candidate_ID": "C00364117",
+                    "City": "BARTON",
+                    "District": "12",
+                    "First": " ADAM H",
+                    "Last": "PUTNAM",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33831"
+                },
+                {
+                    "Candidate_ID": "C00459461",
+                    "City": "LAKELAND",
+                    "District": "12",
+                    "First": " DENNIS ALAN",
+                    "Last": "ROSS",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33813"
+                },
+                {
+                    "Candidate_ID": "C00459776",
+                    "City": "WINTER HAVEN",
+                    "District": "12",
+                    "First": " LORI",
+                    "Last": "EDWARDS",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "33881"
+                },
+                {
+                    "Candidate_ID": "C00461566",
+                    "City": "VALRICO",
+                    "District": "12",
+                    "First": " THOMAS K",
+                    "Last": "SNIDER",
+                    "Party": "LIB",
+                    "State": "FL",
+                    "Zipcode": "33594"
+                },
+                {
+                    "Candidate_ID": "C00467514",
+                    "City": "BARTOW",
+                    "District": "12",
+                    "First": " RANDY",
+                    "Last": "WILKINSON",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33830"
+                },
+                {
+                    "Candidate_ID": "C00467910",
+                    "City": "VALRICO",
+                    "District": "12",
+                    "First": " RANDOLPH",
+                    "Last": "EDWARDS",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "33594"
+                },
+                {
+                    "Candidate_ID": "C00470054",
+                    "City": "WINTER HAVEN",
+                    "District": "12",
+                    "First": " JOHN W JR",
+                    "Last": "LINDSEY",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33884"
+                },
+                {
+                    "Candidate_ID": "C00473728",
+                    "City": "VALRICO",
+                    "District": "12",
+                    "First": " JOHN V",
+                    "Last": "OSINSKI",
+                    "Party": "IND",
+                    "State": "FL",
+                    "Zipcode": "33596"
+                },
+                {
+                    "Candidate_ID": "C00463760",
+                    "City": "BRADENTON",
+                    "District": "13",
+                    "First": " JAMES THEOPOLIS",
+                    "Last": "GOLDEN",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "34208"
+                },
+                {
+                    "Candidate_ID": "C00479022",
+                    "City": "VENICE",
+                    "District": "13",
+                    "First": " RICHARD CHRISTOPHER",
+                    "Last": "EATON",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "34293"
+                },
+                {
+                    "Candidate_ID": "C00471177",
+                    "City": "CAPE CORAL",
+                    "District": "14",
+                    "First": " JAMES LLOYD",
+                    "Last": "ROACH",
+                    "Party": "DEM",
+                    "State": "FL",
+                    "Zipcode": "33990"
+                },
+                {
+                    "Candidate_ID": "C00482190",
+                    "City": "NAPLES",
+                    "District": "14",
+                    "First": " WILLIAM MAVERICK",
+                    "Last": "ST CLAIRE",
+                    "Party": "UNK",
+                    "State": "FL",
+                    "Zipcode": "34102"
+                },
+                {
+                    "Candidate_ID": "C00051227",
+                    "City": "St. Petersburg",
+                    "District": "10",
+                    "First": " C. W. BILL",
+                    "Last": "YOUNG",
+                    "Party": "REP",
+                    "State": "FL",
+                    "Zipcode": "33743"
+                }
+            ],
+            "MD": [
+                {
+                    "Candidate_ID": "C00013128",
+                    "City": "Bethesda",
+                    "District": "30",
+                    "First": " HENRY A.",
+                    "Last": "WAXMAN",
+                    "Party": "DEM",
+                    "State": "MD",
+                    "Zipcode": "20817"
+                }
+            ],
+            "MI": [
+                {
+                    "Candidate_ID": "C00078105",
+                    "City": "Flint",
+                    "District": "05",
+                    "First": " DALE",
+                    "Last": "KILDEE",
+                    "Party": "DEM",
+                    "State": "MI",
+                    "Zipcode": "48501"
+                }
+            ],
+            "MO": [
+                {
+                    "Candidate_ID": "C00025973",
+                    "City": "Lexington",
+                    "District": "04",
+                    "First": " IKE",
+                    "Last": "SKELTON",
+                    "Party": "DEM",
+                    "State": "MO",
+                    "Zipcode": "64067"
+                }
+            ],
+            "PA": [
+                {
+                    "Candidate_ID": "C00019075",
+                    "City": "JOHNSTOWN",
+                    "District": "12",
+                    "First": " JOHN P MR.",
+                    "Last": "MURTHA",
+                    "Party": "DEM",
+                    "State": "PA",
+                    "Zipcode": "15905"
+                }
+            ],
+            "WA": [
+                {
+                    "Candidate_ID": "C00037606",
+                    "City": "TACOMA",
+                    "District": "06",
+                    "First": " NORMAN D",
+                    "Last": "DICKS",
+                    "Party": "DEM",
+                    "State": "WA",
+                    "Zipcode": "98401"
+                }
+            ],
+            "WI": [
+                {
+                    "Candidate_ID": "C00017830",
+                    "City": "Wausau",
+                    "District": "07",
+                    "First": " DAVID R.",
+                    "Last": "OBEY",
+                    "Party": "DEM",
+                    "State": "WI",
+                    "Zipcode": "54402"
+                },
+                {
+                    "Candidate_ID": "C00083428",
+                    "City": "Menomonee Falls",
+                    "District": "05",
+                    "First": " F. JAMES JR.",
+                    "Last": "SENSENBRENNER",
+                    "Party": "REP",
+                    "State": "WI",
+                    "Zipcode": "53051"
+                }
+            ],
+            "WV": [
+                {
+                    "Candidate_ID": "C00081356",
+                    "City": "Beckley",
+                    "District": "03",
+                    "First": " NICK JOE II",
+                    "Last": "RAHALL",
+                    "Party": "DEM",
+                    "State": "WV",
+                    "Zipcode": "25802"
+                }
+            ],
+            "NJ": [
+                {
+                    "Candidate_ID": "C00096412",
+                    "City": "Hamilton",
+                    "District": "04",
+                    "First": " CHRISTOPHER H.",
+                    "Last": "SMITH",
+                    "Party": "REP",
+                    "State": "NJ",
+                    "Zipcode": "08619"
+                }
+            ],
+            "VT": [
+                {
+                    "Candidate_ID": "C00068353",
+                    "City": "MONTPELIER",
+                    "District": "00",
+                    "First": " PATRICK",
+                    "Last": "LEAHY",
+                    "Party": "DEM",
+                    "State": "VT",
+                    "Zipcode": "05601"
+                }
+            ],
+            "UT": [
+                {
+                    "Candidate_ID": "C00104752",
+                    "City": "SALT LAKE CITY",
+                    "District": "00",
+                    "First": " ORRIN G",
+                    "Last": "HATCH",
+                    "Party": "REP",
+                    "State": "UT",
+                    "Zipcode": "84101"
+                }
+            ],
+            "MS": [
+                {
+                    "Candidate_ID": "C00091892",
+                    "City": "OXFORD",
+                    "District": "00",
+                    "First": " THAD",
+                    "Last": "COCHRAN",
+                    "Party": "REP",
+                    "State": "MS",
+                    "Zipcode": "38655"
+                }
+            ]
+        }
+    }
+]
