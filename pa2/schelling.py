@@ -98,11 +98,11 @@ def is_satisfied(grid, R, location, sim_sat_range):
     else:
         return False
 
-def swap_locations(grid, location1, location2):
-    x,y = location1
-    a,b = location2
+#def swap_locations(grid, location1, location2):
+    #x,y = location1
+    #a,b = location2
 
-    grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+    #grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
 
 def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
     '''
@@ -113,11 +113,29 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
     
     for home in homes_for_sale:
         a,b = home
-        if patience > 0:
-            if is_satisfied(grid, R, home, sim_sat_range) == True:  #the parameter passed for location is currently incorrect. Need to figure out how to change "F" to "M/B" to find similarity score
-                patience -=1
-        elif patience == 0:
+        
+        if patience > 1:
             grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+            print("test location is", grid[a][b])
+            print((a,b))
+            if is_satisfied(grid, R, (a, b), sim_sat_range) == True:  
+                patience -=1
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+                print("executed since is_satisfied is true, patience level is", patience)
+                
+            else:
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+                print("executed since is_satisfied is false, patience level is", patience)
+
+        elif patience == 1:
+            grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+            if is_satisfied(grid, R, (a, b), sim_sat_range) == True:
+                patience -=1
+                print("found new home", (a,b))
+                break
+            else:
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+                print("almost found a home...")
 
     return grid 
 
