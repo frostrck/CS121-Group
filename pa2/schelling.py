@@ -131,15 +131,15 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
         a,b = home
         
         if patience > 1:
-            grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+            grid[x][y], grid[a][b] = grid[a][b], grid[x][y]     #swapping values at two locations
             #print("test location is", (a,b))
             if is_satisfied(grid, R, (a, b), sim_sat_range) == True:  
                 patience -=1
-                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]      #swapping the two values back
                 #print("executed since is_satisfied is true, patience level is", patience)
                 
             else:
-                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]      #swapping values back without reducing patience
                 #print("executed since is_satisfied is false, patience level is", patience)
 
         elif patience == 1:
@@ -155,6 +155,17 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
                 #print("almost found a home, patience level remains at 1")
 
     return grid 
+
+
+def simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, color):
+
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if grid[i][j] == color:
+                if is_satisfied(grid, R, (i,j), sim_sat_range) == False:
+                    grid = find_new_home(grid, R, (i,j), patience, sim_sat_range, homes_for_sale)
+
+    return grid, homes_for_sale
 
 
 
