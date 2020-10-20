@@ -52,6 +52,7 @@ def similarity_score(grid, location, R):
         grid: the grid
         R (int): neighborhood parameter
         location (int, int): a grid location
+    Returns: score (float)
     '''
 
     x,y = location
@@ -106,9 +107,24 @@ def is_satisfied(grid, R, location, sim_sat_range):
 
 def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
     '''
-    Find and relocate homeowner to new home
+    Find and relocate homeowner to new home by placing the homeowner in a
+    home for sale and checking if he is satisfied. When patience hits zero, 
+    homeowner is relocated to a home where he is satisfied and city layout changes.
 
+    Inputs:
+        grid: the grid
+        R (int): neighborhood parameter
+        location (int, int): a grid location
+        patience - number of satisfactory homes that must be visited 
+        before choosing the last one visited
+        sim_sat_range (float, float): lower bound and upper bound on
+          the range (inclusive) for when the homeowner is satisfied
+          with his similarity score
+        homes_for_sale: list of homes for sale
+    Returns: updated grid
     '''
+    # print statements are for debugging purposes
+
     x,y = location
     
     for home in homes_for_sale:
@@ -116,26 +132,27 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
         
         if patience > 1:
             grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
-            print("test location is", grid[a][b])
-            print((a,b))
+            #print("test location is", (a,b))
             if is_satisfied(grid, R, (a, b), sim_sat_range) == True:  
                 patience -=1
                 grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
-                print("executed since is_satisfied is true, patience level is", patience)
+                #print("executed since is_satisfied is true, patience level is", patience)
                 
             else:
                 grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
-                print("executed since is_satisfied is false, patience level is", patience)
+                #print("executed since is_satisfied is false, patience level is", patience)
 
         elif patience == 1:
             grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
             if is_satisfied(grid, R, (a, b), sim_sat_range) == True:
                 patience -=1
-                print("found new home", (a,b))
+                homes_for_sale.insert(0,location)
+                homes_for_sale.remove(home)
+                #print(homes_for_sale)
                 break
             else:
                 grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
-                print("almost found a home...")
+                #print("almost found a home, patience level remains at 1")
 
     return grid 
 
