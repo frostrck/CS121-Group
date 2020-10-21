@@ -121,7 +121,7 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
           the range (inclusive) for when the homeowner is satisfied
           with his similarity score
         homes_for_sale: list of homes for sale
-    Returns: updated grid
+    Returns: updated grid, number of relocations
     '''
 
     x,y = location
@@ -169,9 +169,8 @@ def simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, color):
         for j in range(len(grid[i])):
             if grid[i][j] == color:
                 if is_satisfied(grid, R, (i,j), sim_sat_range) == False:
-                    grid_relocation = find_new_home(grid, R, (i,j), patience, sim_sat_range, homes_for_sale)
-                    grid = grid_relocation[0]
-                    counter += grid_relocation[1]
+                    grid, relocations = find_new_home(grid, R, (i,j), patience, sim_sat_range, homes_for_sale)
+                    counter += relocations
 
     return [grid, counter]
 
