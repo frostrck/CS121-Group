@@ -123,40 +123,38 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
         homes_for_sale: list of homes for sale
     Returns: updated grid
     '''
-    # print statements are for debugging purposes
 
     x,y = location
-    relocation = 0
+    relocations = 0
     
     for home in homes_for_sale:
         a,b = home
         
         if patience > 1:
-            grid[x][y], grid[a][b] = grid[a][b], grid[x][y]     #swapping values at two locations
-            #print("test location is", (a,b))
+            grid[x][y], grid[a][b] = grid[a][b], grid[x][y] 
+
             if is_satisfied(grid, R, (a, b), sim_sat_range) == True:  
                 patience -=1
-                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]      #swapping the two values back
-                #print("executed since is_satisfied is true, patience level is", patience)
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]     
                 
             else:
-                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]      #swapping values back without reducing patience
-                #print("executed since is_satisfied is false, patience level is", patience)
+                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]     
 
         elif patience == 1:
             grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
+
             if is_satisfied(grid, R, (a, b), sim_sat_range) == True:
                 patience -=1
                 homes_for_sale.insert(0,location)
                 homes_for_sale.remove(home)
-                relocation += 1
-                #print(homes_for_sale)
+                relocations += 1
                 break
+
             else:
                 grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
-                #print("almost found a home, patience level remains at 1")
+               
 
-    return [grid, relocation]
+    return [grid, relocations]
 
 
 def simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, color):
@@ -185,15 +183,17 @@ def simulate_step(grid, R, patience, sim_sat_range, homes_for_sale):
     Returns: updated grid
     '''
 
-    
-
     new_grid_maroon = simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, "M")
     
     new_grid_blue = simulate_wave(new_grid_maroon[0], R, patience, sim_sat_range, homes_for_sale, "B")
 
-    count = new_grid_maroon[1] + new_grid_blue[1]
+    maroon_relocations = new_grid_maroon[1]
+    blue_relocations = new_grid_blue[1]
+    updated_city = new_grid_blue[0]
 
-    return [new_grid_blue[0], count]
+    relocations = maroon_relocations + blue_relocations
+
+    return [updated_city, relocations]
 
 def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
     '''
@@ -211,20 +211,20 @@ def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
 
     Returns: (int) The number of relocations completed.
     '''
+    steps = 0   
+    total_relocations = 0
 
-    total_relocate = 0
-
-    while max_steps > 0:
+    while steps < max_steps:
         grid_relocation = simulate_step(grid, R, patience, sim_sat_range, homes_for_sale)
         relocation = grid_relocation[1]
         grid = grid_relocation[0]
         if relocation == 0: 
             break 
-        max_steps -= 1
-        total_relocate += relocation
+        steps += 1
+        total_relocations += relocation
 
 
-    return total_relocate
+    return total_relocations
 
 
 @click.command(name="schelling")
