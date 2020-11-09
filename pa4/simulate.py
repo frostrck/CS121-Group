@@ -15,7 +15,7 @@ import util
 
 
 class Voter:
-    def __init__(self, id, arrival_time, voting_duration, typ):
+    def __init__(self, id, arrival_time, voting_duration = None):
         '''
         Constructor for the Voter class
 
@@ -30,8 +30,6 @@ class Voter:
         self.voting_duration = voting_duration
         self.start_time = None
         self.departure_time = None
-        self.type = typ
-        self.service_time = 0
 
 class Precinct(object):
     def __init__(self, name, hours_open, max_num_voters,
@@ -55,7 +53,7 @@ class Precinct(object):
         self.arrival_rate = arrival_rate
         self.voting_duration_rate = voting_duration_rate
 
-    def generate_arrival(self, arrival_rate):
+    def generate_arrival(self):
         return random.expovariate(self.arrival_rate)
 
     def generate_service_time(self, straight_ticket_duration):
@@ -81,21 +79,22 @@ class Precinct(object):
         '''
 
         random.seed(seed)
-        queue = Queue()
         voters = []
-        minutes_open = hours_open * 60
+        minutes_open = self.hours_open * 60
         id = 1
 
-        next_arrival = generate_arrival(self)
+        next_arrival = random.expovariate(self.arrival_rate)
         t = next_arrival
 
         while t < minutes_open and len(voters) <= self.max_num_voters:
             if t == next_arrival:
                 voter = Voter(id, arrival_time = t)
                 id += 1
-                queue.enqueue(voter)
-                next_arrival = t + generate_arrival(self)
+                #queue.enqueue(voter)
+                next_arrival = t + random.expovariate(self.arrival_rate)
                 voters.append(voter)
+            
+            t = next_arrival
             
             #if t == next_service:
                 #done_voter = queue.dequeue()
