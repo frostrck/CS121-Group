@@ -1,7 +1,7 @@
 '''
 Polling places
 
-YOUR NAME(s) HERE
+Evelyn Dang, Corry Ke
 
 Main file for polling place simulation
 '''
@@ -14,8 +14,24 @@ import util
 
 
 
-### YOUR Voter class GOES HERE.
+class Voter:
+    def __init__(self, id, arrival_time, voting_duration, typ):
+        '''
+        Constructor for the Voter class
 
+        Inputs:
+        id: a voter identifier
+        arrival_time: (int) time that voter arrives
+        voting_duration: (int) number of minutes taken to vote
+        '''
+
+        self.id = id
+        self.arrival_time = arrival_time
+        self.voting_duration = voting_duration
+        self.start_time = None
+        self.departure_time = None
+        self.type = typ
+        self.service_time = 0
 
 class Precinct(object):
     def __init__(self, name, hours_open, max_num_voters,
@@ -32,10 +48,21 @@ class Precinct(object):
             voting_duration_rate: (float) Lambda for voting duration
         '''
 
-        # YOUR CODE HERE
+        self.name = name
+        self.hours_open = hours_open
+        self.max_num_voters = max_num_voters
+        self.num_booths = num_booths
+        self.arrival_rate = arrival_rate
+        self.voting_duration_rate = voting_duration_rate
 
-        # REPLACE "pass" with your constructor implementation
-        pass
+    def generate_arrival(self, arrival_rate):
+        return random.expovariate(self.arrival_rate)
+
+    def generate_service_time(self, straight_ticket_duration):
+        if voter.type == "straight":
+            voter.service_time = straight_ticket_duration
+        if voter.type == "split":
+            voter.service_time = random.expovariate(self.voting_duration_rate)
 
 
     def simulate(self, percent_straight_ticket, straight_ticket_duration, seed):
@@ -53,10 +80,28 @@ class Precinct(object):
             List of voters who voted in the precinct
         '''
 
-        # YOUR CODE HERE
+        random.seed(seed)
+        queue = Queue()
+        voters = []
+        minutes_open = hours_open * 60
+        id = 1
 
-        # REPLACE [] with appropriate return value
-        return []
+        next_arrival = generate_arrival(self)
+        t = next_arrival
+
+        while t < minutes_open and len(voters) <= self.max_num_voters:
+            if t == next_arrival:
+                voter = Voter(id, arrival_time = t)
+                id += 1
+                queue.enqueue(voter)
+                next_arrival = t + generate_arrival(self)
+                voters.append(voter)
+            
+            #if t == next_service:
+                #done_voter = queue.dequeue()
+                #done_voter.departure_time = t
+           
+        return voters
 
 
 ### YOUR VotingBooths class GOES HERE.
