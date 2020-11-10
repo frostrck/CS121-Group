@@ -30,55 +30,12 @@ CS121: Schelling Model of Housing Segregation
 import click
 import utility
 
-def dist(location1, location2):
-    '''
-    Determine the distance of two locations from one another. 
-
-    Inputs (tuples): 
-        location1: first location 
-        location2: second location
-    Output: distance (int)
-    '''
-
-    d = abs(location1[0]-location2[0]) + abs(location1[1]-location2[1])
-
-    return d
-
-def similarity_score(grid, location, R):
-    '''
-    Calculates the similarity score for a neighborhood 
-
-    Inputs:
-        grid: the grid
-        R (int): neighborhood parameter
-        location (int, int): a grid location
-    Output: score (float)
-    '''
-
-    x,y = location
-    S = 0
-    H = 0
-
-    for i in range(x-R, x+1+R):
-        for j in range(y-R,y+1+R):
-            if  i >= 0 and i < len(grid) and j >= 0 and j < len(grid):
-                if dist((i, j), location) <= R:
-                    if grid[i][j] == grid[x][y]:
-                        S += 1
-                        H += 1
-                    elif grid[i][j] != "F":
-                        H += 1
-    
-    score = S/H 
-
-    return score
 
 def is_satisfied(grid, R, location, sim_sat_range):
     '''
-    Determine whether or not the homeowner at a specific location is
-    satisfied using an R-neighborhood centered around the location.
-    That is, is does their similarity score fall with the specified
-    range (inclusive)
+    Determine whether the homeowner at a specific location is satisfied by 
+    determining their R-neighborhood, calculating their similarity score 
+    and checking whether it falls within their satisfaction range (inclusive).
 
     Inputs:
         grid: the grid
@@ -87,23 +44,32 @@ def is_satisfied(grid, R, location, sim_sat_range):
         sim_sat_range (float, float): lower bound and upper bound on
           the range (inclusive) for when the homeowner is satisfied
           with his similarity score.
+
     Returns: bool
     '''
     
     x,y = location
     assert grid[x][y] != "F"
     lb,ub = sim_sat_range
+    S = 0
+    H = 0
 
-    if lb <= similarity_score(grid, location, R) <= ub:
-        return True
-    else:
-        return False
+    for i in range(x-R, x+1+R):
+        for j in range(y-R, y+1+R):
+            if  i >= 0 and i < len(grid) and j >= 0 and j < len(grid):
+                distance = abs(x-i) + abs(y-j)
+                if distance <= R:
+                    if grid[i][j] == grid[x][y]:
+                        S += 1
+                        H += 1
+                    elif grid[i][j] != "F":
+                        H += 1
+    
+    score = S/H 
 
-#def swap_locations(grid, location1, location2):
-    #x,y = location1
-    #a,b = location2
+    return lb <= score <= ub
+       
 
-    #grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
 
 def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
     '''
@@ -115,45 +81,39 @@ def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
         grid: the grid
         R (int): neighborhood parameter
         location (int, int): a grid location
-        patience - number of satisfactory homes that must be visited 
-        before choosing the last one visited
+        patience (int): number of satisfactory homes that must be visited 
+        before relocating
         sim_sat_range (float, float): lower bound and upper bound on
           the range (inclusive) for when the homeowner is satisfied
           with his similarity score
-        homes_for_sale: list of homes for sale
-    Returns: updated grid, number of relocations
+        homes_for_sale (list of tuples): list of locations of homes for sale
+
+    Returns: tuple with updated grid, number of relocations
     '''
 
     x,y = location
     relocations = 0
     
     for home in homes_for_sale:
-        a,b = home
-        
-        if patience > 1:
-            grid[x][y], grid[a][b] = grid[a][b], grid[x][y] 
 
-            if is_satisfied(grid, R, (a, b), sim_sat_range) == True:  
-                patience -=1
-                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]     
-                
-            else:
-                grid[x][y], grid[a][b] = grid[a][b], grid[x][y]     
+        a,b = home
+        grid[x][y], grid[a][b] = grid[a][b], grid[x][y] 
+
+        if patience > 1:
+            if is_satisfied(grid, R, (a, b), sim_sat_range):  
+                patience -= 1     
+            grid[x][y], grid[a][b] = grid[a][b], grid[x][y]     
 
         elif patience == 1:
-            grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
-
-            if is_satisfied(grid, R, (a, b), sim_sat_range) == True:
-                patience -=1
+            if is_satisfied(grid, R, (a, b), sim_sat_range):
+                patience -= 1
                 homes_for_sale.insert(0,location)
                 homes_for_sale.remove(home)
                 relocations += 1
                 break
-
             else:
                 grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
                
-
     return (grid, relocations)
 
 
@@ -161,38 +121,57 @@ def simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, color):
     '''
     Simulates one relocation wave for either maroon or blue homeowners
 
-    Returns: updated grid
+    Inputs:
+        grid: the grid
+        R (int): neighborhood parameter
+        patience (int): number of satisfactory homes that must be visited 
+           before relocating
+        sim_sat_range (float, float): lower bound and upper bound on
+          the range (inclusive) for when the homeowner is satisfied
+          with his similarity score
+        homes_for_sale (list of tuples): list of locations with homes for sale
+        color: color of relocation wave
+
+    Returns: tuple with updated grid, number of relocations during one wave
     '''
 
     counter = 0
-    for i in range(len(grid)):
-        for j in range(len(grid[i])):
-            if grid[i][j] == color:
-                if is_satisfied(grid, R, (i,j), sim_sat_range) == False:
-                    grid, relocations = find_new_home(grid, R, (i,j), patience, sim_sat_range, homes_for_sale)
+    for i, row in enumerate(grid):
+        for j, val in enumerate(row):
+            if val == color:
+                if not is_satisfied(grid, R, (i,j), sim_sat_range):
+                    grid, relocations = find_new_home(grid, R, (i,j), patience, 
+                    sim_sat_range, homes_for_sale)
                     counter += relocations
 
-    return [grid, counter]
+    return (grid, counter)
 
 
 def simulate_step(grid, R, patience, sim_sat_range, homes_for_sale):
     '''
     Simulates one step of the simulation, where there's a maroon wave followed by a blue wave
 
-    Returns: updated grid
+    Inputs:
+        grid: the grid
+        R (int): neighborhood parameter
+        patience (int): number of satisfactory homes that must be visited 
+          before relocating
+        sim_sat_range (float, float): lower bound and upper bound on
+          the range (inclusive) for when the homeowner is satisfied
+          with his similarity score
+        homes_for_sale (list of tuples): a list of locations with homes for sale
+
+    Returns: tuple with updated grid, number of relocations during one step
     '''
 
-    grid_after_m, maroon_relocations = simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, "M")
-    
+    grid_after_m, maroon_relocations = simulate_wave(grid, R, patience, sim_sat_range, homes_for_sale, "M")  
     updated_grid, blue_relocations = simulate_wave(grid_after_m, R, patience, sim_sat_range, homes_for_sale, "B")
-
     relocations = maroon_relocations + blue_relocations
 
     return (updated_grid, relocations)
 
 def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
     '''
-
     Do a full simulation.
 
     Inputs:
@@ -201,21 +180,21 @@ def do_simulation(grid, R, sim_sat_range, patience, max_steps, homes_for_sale):
         sim_sat_range (float, float): lower bound and upper bound on
           the range (inclusive) for when the homeowner is satisfied
           with his similarity score.
+        patience (int): number of satisfactory homes that must be visited 
+          before relocating
         max_steps (int): maximum number of steps to do
-        for_sale (list of tuples): a list of locations with homes for sale
+        homes_for_sale (list of tuples): a list of locations with homes for sale
 
     Returns: (int) The number of relocations completed.
     '''
-    steps = 0   
+
     total_relocations = 0
 
-    while steps < max_steps:
+    for i in range(0, max_steps):
         grid, relocations = simulate_step(grid, R, patience, sim_sat_range, homes_for_sale)
         if relocations == 0: 
             break 
-        steps += 1
         total_relocations += relocations
-
 
     return total_relocations
 
