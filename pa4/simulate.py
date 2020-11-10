@@ -25,7 +25,6 @@ class Voter:
         voting_duration: (int) number of minutes taken to vote
         '''
 
-        self.id = id
         self.arrival_time = arrival_time
         self.voting_duration = voting_duration
         self.start_time = None
@@ -53,14 +52,18 @@ class Precinct(object):
         self.arrival_rate = arrival_rate
         self.voting_duration_rate = voting_duration_rate
 
-    def generate_arrival(self):
-        return random.expovariate(self.arrival_rate)
+    def next_voter(self, time, percent_straight_ticket):
+        '''
+        Returns the next voter in a precinct, with the start time and departure time set as None
 
-    def generate_service_time(self, straight_ticket_duration):
-        if voter.type == "straight":
-            voter.service_time = straight_ticket_duration
-        if voter.type == "split":
-            voter.service_time = random.expovariate(self.voting_duration_rate)
+        Inputs:
+        time: int
+        '''
+
+        gap, voting_duration = util.gen_voter_parameters(arrival_rate, voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
+        next_voter = Voter(time + gap, voting_duration)
+
+        return next_voter
 
 
     def simulate(self, percent_straight_ticket, straight_ticket_duration, seed):
@@ -81,24 +84,25 @@ class Precinct(object):
         random.seed(seed)
         voters = []
         minutes_open = self.hours_open * 60
-        id = 1
+        i = 1
 
-        next_arrival = random.expovariate(self.arrival_rate)
+        gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
+                         percent_straight_ticket, straight_ticket_duration=2)
+
+        next_arrival = gap
         t = next_arrival
 
-        while t < minutes_open and len(voters) <= self.max_num_voters:
+        while t <= minutes_open and i <= self.max_num_voters:
             if t == next_arrival:
                 voter = Voter(id, arrival_time = t)
-                id += 1
-                #queue.enqueue(voter)
-                next_arrival = t + random.expovariate(self.arrival_rate)
+                gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
+                         percent_straight_ticket, straight_ticket_duration=2)
+                voter.voting_duration = voting_duration
+                i += 1
+                next_arrival = t + gap
                 voters.append(voter)
             
             t = next_arrival
-            
-            #if t == next_service:
-                #done_voter = queue.dequeue()
-                #done_voter.departure_time = t
            
         return voters
 
