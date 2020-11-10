@@ -99,11 +99,7 @@ def is_satisfied(grid, R, location, sim_sat_range):
     else:
         return False
 
-#def swap_locations(grid, location1, location2):
-    #x,y = location1
-    #a,b = location2
 
-    #grid[x][y], grid[a][b] = grid[a][b], grid[x][y]
 
 def find_new_home(grid, R, location, patience, sim_sat_range, homes_for_sale):
     '''

@@ -105,6 +105,42 @@ class Precinct(object):
 
 ### YOUR VotingBooths class GOES HERE.
 
+class VotingBooths(object):
+    '''
+    Voting booths in a precinct
+    '''
+    def __init__(self, num_booths):
+        '''
+        Constructor
+
+        Parameters:
+            num_booths: (int) the number of booths in a precinct
+        '''
+        self.__pq = queue.PriorityQueue(maxsize = num_booths)
+
+    def add_voter(self, departure_time):
+        '''
+        Adding a voter to the booth
+        
+        Input:
+            departure_time: (float) time of departure
+        
+        Returns: None
+        '''
+        self.__pq.put(departure_time, block = False) 
+    
+    def remove_voter(self):
+        '''
+        Removes a voter from the booth
+        
+        Input: None
+        
+        Returns: (float) time of departure
+        '''
+
+        departure_time = self.__pq.get(block = False)
+
+        return departure_time
 
 def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed=0):
     '''
