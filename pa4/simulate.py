@@ -202,6 +202,7 @@ def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed 
     arrival_rate = precinct['arrival_rate']
     num_booths = precinct['num_booths']
     voting_duration = precinct['voting_duration_rate']
+    straight_duration = precinct['straight_ticket_duration']
     p = Precinct(name, hours_open, max_num_voters, num_booths, arrival_rate, voting_duration)
     
     seed = initial_seed
