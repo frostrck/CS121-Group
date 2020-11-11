@@ -83,6 +83,7 @@ class Precinct(object):
 
         random.seed(seed)
         voters = []
+        booths = VotingBooths(self.num_booths)
         minutes_open = self.hours_open * 60
         voter_count = 0
 
@@ -97,12 +98,29 @@ class Precinct(object):
             if t == next_arrival:
 
                 voter = Voter(arrival_time = t, voting_duration = voting_duration)
+                if not booths.is_full(): 
+                    voter.start_time = t
+                    voter.departure_time = t + voting_duration
+                    booths.add_voter(voter.departure_time)
+
+                else: 
+                    latest_departure = booths.remove_voter()
+                    if latest_departure > t:
+                        voter.start_time = latest_departure
+                        voter.departure_time = latest_departure + voting_duration
+                        booths.add_voter(voter.departure_time)
+                    else:
+                        voter.start_time = t
+                        voter.departure_time = t + voting_duration
+                        booths.add_voter(voter.departure_time)
+
                 voter_count += 1
                 gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
                 next_arrival = t + gap
                 voters.append(voter)
             
             t = next_arrival
+
            
         return voters
 
@@ -145,6 +163,20 @@ class VotingBooths(object):
         departure_time = self.__pq.get(block = False)
 
         return departure_time
+    
+    def is_empty(self):
+        '''
+        Check if voting booths are empty
+        '''
+        
+        return self.__pq.empty()
+
+    def is_full(self):
+        '''
+        Check if voting booths are full
+        '''
+
+        return self.__pq.full()
 
 def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed=0):
     '''
