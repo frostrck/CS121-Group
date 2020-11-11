@@ -246,11 +246,16 @@ def find_percent_split_ticket(precinct, target_wait_time, ntrials, seed=0):
         If the target waiting time is infeasible, returns (0, None)
     '''
 
-    # YOUR CODE HERE
-
-    # REPLACE (0,0) with a tuple containing the percentage of split-ticket
-    # voters and the average waiting time for that percentage
-    return (0, 0)
+    percent_split_ticket = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    for percentage in percent_split_ticket:
+        avg_wait_time = find_avg_wait_time(precinct, 1 - percentage, ntrials, seed)
+        if avg_wait_time > target_wait_time:
+            max_percent = percentage
+            break
+        elif percentage == 1 and avg_wait_time < target_wait_time:
+            return (1, None)
+         
+    return (max_percent, avg_wait_time)
 
 
 # DO NOT REMOVE THESE LINES OF CODE
