@@ -15,7 +15,7 @@ import util
 
 
 class Voter:
-    def __init__(self, id, arrival_time, voting_duration = None):
+    def __init__(self, arrival_time, voting_duration):
         '''
         Constructor for the Voter class
 
@@ -84,21 +84,21 @@ class Precinct(object):
         random.seed(seed)
         voters = []
         minutes_open = self.hours_open * 60
-        i = 1
+        voter_count = 0
 
         gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
-                         percent_straight_ticket, straight_ticket_duration=2)
-
+        
         next_arrival = gap
+        next_service = next_arrival + voting_duration
+
         t = next_arrival
 
-        while t <= minutes_open and i <= self.max_num_voters:
+        while t <= minutes_open and voter_count < self.max_num_voters:
             if t == next_arrival:
-                voter = Voter(id, arrival_time = t)
+
+                voter = Voter(arrival_time = t, voting_duration = voting_duration)
+                voter_count += 1
                 gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
-                         percent_straight_ticket, straight_ticket_duration=2)
-                voter.voting_duration = voting_duration
-                i += 1
                 next_arrival = t + gap
                 voters.append(voter)
             
