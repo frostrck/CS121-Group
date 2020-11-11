@@ -178,7 +178,7 @@ class VotingBooths(object):
 
         return self.__pq.full()
 
-def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed=0):
+def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed = 0):
     '''
     Simulates a precinct multiple times with a given percentage of
     straight-ticket voters. For each simulation, computes the average
@@ -196,10 +196,30 @@ def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed=
         the precinct 'ntrials' times.
     '''
 
-    # YOUR CODE HERE.
+    name = precinct['name']
+    hours_open = precinct['hours_open']
+    max_num_voters = precinct['num_voters']
+    arrival_rate = precinct['arrival_rate']
+    num_booths = precinct['num_booths']
+    voting_duration = precinct['voting_duration_rate']
+    p = Precinct(name, hours_open, max_num_voters, num_booths, arrival_rate, voting_duration)
+    
+    seed = initial_seed
+    avg_times = []
 
+    for i in range(ntrials):
+        sim = p.simulate(percent_straight_ticket, straight_duration, seed)
+        total_wait = 0
+        for voter in sim:
+            total_wait += voter.start_time - voter.arrival_time
+        avg_wait = total_wait / max_num_voters
+        avg_times.append(avg_wait)
+        seed += 1
+    
+    sorted_times = sorted(avg_times)
+        
     # REPLACE 0.0 with the waiting time this function computes
-    return 0.0
+    return sorted_times[ntrials // 2]
 
 
 def find_percent_split_ticket(precinct, target_wait_time, ntrials, seed=0):
