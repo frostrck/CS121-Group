@@ -53,7 +53,8 @@ class Precinct(object):
 
     def next_voter(self, time, percent_straight_ticket):
         '''
-        Returns the next voter in a precinct, with the start time and departure time set as None
+        Returns the next voter in a precinct, with the start time 
+            and departure time set as None
 
         Inputs:
         time: (float) the time where the current voter has finished
@@ -96,8 +97,8 @@ class Precinct(object):
 
         for i in range(self.max_num_voters):
 
-            gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, 
-            percent_straight_ticket, straight_ticket_duration=2)   
+            gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, 
+                                            self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)   
             
             next_arrival = t + gap
             t = next_arrival
@@ -216,7 +217,8 @@ def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed 
     num_booths = precinct['num_booths']
     voting_duration = precinct['voting_duration_rate']
     straight_duration = precinct['straight_ticket_duration']
-    p = Precinct(name, hours_open, max_num_voters, num_booths, arrival_rate, voting_duration)
+    p = Precinct(name, hours_open, max_num_voters, 
+                num_booths, arrival_rate, voting_duration)
 
     seed = initial_seed
     avg_times = []
