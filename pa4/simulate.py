@@ -60,7 +60,7 @@ class Precinct(object):
         time: int
         '''
 
-        gap, voting_duration = util.gen_voter_parameters(arrival_rate, voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
+        gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
         next_voter = Voter(time + gap, voting_duration)
 
         return next_voter
@@ -85,47 +85,35 @@ class Precinct(object):
         voters = []
         booths = VotingBooths(self.num_booths)
         minutes_open = self.hours_open * 60
-        voter_count = 0
 
-        gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
-        
-        next_arrival = gap
-        next_service = next_arrival + voting_duration
+        t = 0
 
-        t = next_arrival
+        for i in range(self.max_num_voters):
 
-        while t <= minutes_open and voter_count < self.max_num_voters:
-            if t == next_arrival:
+            gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, 
+            percent_straight_ticket, straight_ticket_duration=2)   
+            
+            next_arrival = t + gap
+            next_service = next_arrival + voting_duration
+            t = next_arrival
 
-                voter = Voter(arrival_time = t, voting_duration = voting_duration)
+            if t >= minutes_open:
+                break
+           
+            elif t == next_arrival:
+                voter = Voter(t, voting_duration)
                 if not booths.is_full(): 
-                    voter.start_time = t
-                    voter.departure_time = t + voting_duration
-                    booths.add_voter(voter.departure_time)
-
+                    booths.add_voter(voter, t, voting_duration)
                 else: 
                     latest_departure = booths.remove_voter()
                     if latest_departure > t:
-                        voter.start_time = latest_departure
-                        voter.departure_time = latest_departure + voting_duration
-                        booths.add_voter(voter.departure_time)
+                        booths.add_voter(voter, latest_departure, voting_duration)
                     else:
-                        voter.start_time = t
-                        voter.departure_time = t + voting_duration
-                        booths.add_voter(voter.departure_time)
-
-                voter_count += 1
-                gap, voting_duration = util.gen_voter_parameters(self.arrival_rate, self.voting_duration_rate, percent_straight_ticket, straight_ticket_duration=2)
-                next_arrival = t + gap
+                        booths.add_voter(voter, t, voting_duration)
                 voters.append(voter)
-            
-            t = next_arrival
-
-           
+         
         return voters
 
-
-### YOUR VotingBooths class GOES HERE.
 
 class VotingBooths(object):
     '''
@@ -135,12 +123,12 @@ class VotingBooths(object):
         '''
         Constructor
 
-        Parameters:
+        Input:
             num_booths: (int) the number of booths in a precinct
         '''
         self.__pq = queue.PriorityQueue(maxsize = num_booths)
 
-    def add_voter(self, departure_time):
+    def add_voter(self, voter, t, voting_duration):
         '''
         Adding a voter to the booth
         
@@ -149,7 +137,9 @@ class VotingBooths(object):
         
         Returns: None
         '''
-        self.__pq.put(departure_time, block = False) 
+        voter.start_time = t
+        voter.departure_time = t + voting_duration
+        self.__pq.put(voter.departure_time, block = False) 
     
     def remove_voter(self):
         '''
@@ -204,7 +194,7 @@ def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed 
     voting_duration = precinct['voting_duration_rate']
     straight_duration = precinct['straight_ticket_duration']
     p = Precinct(name, hours_open, max_num_voters, num_booths, arrival_rate, voting_duration)
-    
+
     seed = initial_seed
     avg_times = []
 
@@ -219,7 +209,6 @@ def find_avg_wait_time(precinct, percent_straight_ticket, ntrials, initial_seed 
     
     sorted_times = sorted(avg_times)
         
-    # REPLACE 0.0 with the waiting time this function computes
     return sorted_times[ntrials // 2]
 
 
@@ -247,15 +236,15 @@ def find_percent_split_ticket(precinct, target_wait_time, ntrials, seed=0):
     '''
 
     percent_split_ticket = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+
     for percentage in percent_split_ticket:
         avg_wait_time = find_avg_wait_time(precinct, 1 - percentage, ntrials, seed)
         if avg_wait_time > target_wait_time:
-            max_percent = percentage
             break
         elif percentage == 1 and avg_wait_time < target_wait_time:
-            return (1, None)
+            avg_wait_time = None
          
-    return (max_percent, avg_wait_time)
+    return (percentage, avg_wait_time)
 
 
 # DO NOT REMOVE THESE LINES OF CODE
