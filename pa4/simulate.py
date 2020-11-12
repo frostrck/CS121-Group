@@ -259,7 +259,7 @@ def find_percent_split_ticket(precinct, target_wait_time, ntrials, seed=0):
     '''
 
     lst = list(range(11))
-    percent_split_ticket = [i * 0.1 for i in lst]
+    percent_split_ticket = [round(i * 0.1, 1) for i in lst]
 
     for percent in percent_split_ticket:
         percent_split = percent
